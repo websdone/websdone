@@ -1,0 +1,22 @@
+<!-- Portfolio description -->
+
+<article class="portfolio-about container" ng-repeat="work in workDetails">
+    <img ng-src="{{ workDetails[$index].img }}" title="" class="col-md-6" />
+
+    <article class="col-md-6">
+        <h1 ng-bind-html="work.title"> </h1>
+        <h3> {{ workDetails[$index].title2 }} </h3>
+        <p ng-bind-html="work.desc"> </p>  
+        <p ng-bind-html="work.carousel"> </p> 
+        
+        <div class="chunky">
+        	<a href="{{ workDetails[$index].link }}" class="btn" target="_black">  Visit Website </a> 
+        	<a href="#portfolio" class="btn" target="_black">  Back </a> 
+        </div>
+    </article>
+</article>       
+
+
+    
+
+    

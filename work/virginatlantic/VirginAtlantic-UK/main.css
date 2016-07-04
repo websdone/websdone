@@ -1,0 +1,145 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-webkit-text-size-adjust:none;
+}
+
+div {
+	position: absolute;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-webkit-text-size-adjust:none;
+	
+}
+
+#container, .portrait #container, .portrait-180 #container {
+	overflow:hidden;
+	position:absolute;
+	height:1004px;width:768px;
+	background: black;
+}
+
+#content{
+	overflow:hidden;
+	position:absolute;
+	width:1024px;height:1004px;
+	left:-128px;top:0;
+	background-image: url(Virgin_bg.jpg);
+} 
+
+.landscape #container, .landscape-right #container, .landscape-left #container {
+	height:748px;width:1024px;
+}
+
+.landscape #content, .landscape-right #content, .landscape-left #content{
+	left:0;top:-128px;
+}
+
+body {
+/*	background: red;*/
+}
+
+
+#nav {
+	position: absolute;
+	width: 700px; height: 80px;
+	left: 164px; top: 650px;
+	background-image: url(Virgin_Nav.png);
+	z-index: 10;
+}
+
+#slider {
+	position:absolute;
+	width:4096px;height:490px;
+	top: 160px;left:174px;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-delay: 100ms;
+	-webkit-transition-duration: 1000ms;
+}
+
+#home {
+	position: absolute;
+	width: 670px; 
+	height: 490px;
+	left:0px; 
+	top:0px;
+	background: url(Virgin_Home_Img.png) top left;
+	z-index: 10;
+	
+}
+
+#limo {
+	position: absolute;
+	width: 670px; height: 490px;
+	left:1024px; top:0px;
+	background-image: url(Virgin_Limo_Img.png);
+	z-index: 10;
+}
+
+#club {
+	position: absolute;
+	width: 670px; height: 490px;
+	left:2048px; top:0px;
+	background-image: url(Virgin_Club_Img.png);
+	z-index: 10;
+}
+
+#suite {
+	position: absolute;
+	width: 670px; height: 490px;
+	left:3072px; top:0px;
+	background-image: url(Virgin_Suite_Img.png);
+	z-index: 10;
+}
+
+
+#videoContainer {
+	position: absolute;
+	width: 670px; height: 490px;
+/*	left: 174px; top: 180px;   */
+	display: none;
+}
+
+#videoContainer.home {
+	left: 0px; top:0px;
+	display: block;
+	z-index: 20;
+}
+
+
+#videoContainer.limo {
+	left:1024px; top:0px;
+	display: block;
+	z-index: 20;
+}
+
+#videoContainer.club {
+	left:2048px; top:0px;
+	display: block;
+	z-index: 20;
+}
+
+#videoContainer.suite {
+	left:3072px; top:0px;
+	display: block;
+	z-index: 20;
+}
+
+
+#video {
+	position: absolute;
+	width:670px; height:490px;
+	display: block;
+}

@@ -1,0 +1,128 @@
+
+ /***** 
+  RESPONSIVE STYLES FOR TABLET AND MOBILE 
+  ******/
+@media only screen and (max-width: 48em) { /** MOBILE **/
+  h1, #portal-code h1 {
+    font: 1.9em Gotham-medium, Helvetica, Arial, sans-serif;
+  }
+  h2 {
+    font: 1em Gotham-bold, Helvetica, Arial, sans-serif;
+  }
+  .landing p, p, label {
+    font: 0.9em Arial, Helvetica, sans-serif;
+  }
+  .contact h1 + p, .contact-list .phone-number, .phone-number {
+    font: 1.5em Gotham-book, Helvetica, Arial, sans-serif;
+    margin-bottom: 0.8em;
+  }
+  footer ul li {
+      margin-top: 14px;
+      margin-right: 2.3%;
+  }
+  a, footer a:hover {
+      font: 0.8em Gotham-book, Helvetica, Arial, sans-serif;
+  }
+  footer {
+     height: 42px;
+  }
+  footer .container {
+    width: 93%;
+  }
+  header img {
+      background-size: cover;
+      height: auto;
+      z-index: 999;
+      width: 100%;
+  }
+  #main {
+    position: relative;
+    padding: 1em;
+  }
+  .contact h1 {
+      font: 2.2em Gotham-medium, Helvetica, Arial, sans-serif;
+  }
+  .panel { 
+      margin: 7% auto;
+  }
+  .accordion .accordion-body {
+      padding: 0.5em 0 0;
+  }
+  .accordion p {
+      font: 0.8em Arial, Helvetica, sans-serif;
+  }
+  .accordion a {
+      font: 0.8em Gotham-book, Helvetica, Arial, sans-serif;
+  }
+  .landing, body.landing-2 {
+    background: transparent url("../images/main-bg.jpg") repeat 81% 0 fixed;
+  }
+  /****
+    CONTACT US 
+  ***/
+  .contact h1 {
+      margin: 10px 0 25px;
+  }
+  .form-item:nth-child(odd) {
+      padding-right: 0;
+  }
+  .contact {
+    color: #333333;
+    width: 86%;
+  }
+  .phone-number span {
+        margin-left: 12.3%;
+  }
+  .form-item {
+    margin-bottom: 10px;
+  }
+  hr {
+    margin: 15px 0;
+  }
+  .contact textarea {
+    width: 100%;
+    height: 150px;
+  }
+
+  .contactus .logo, .logos {
+      width: 14.5%;
+  }
+  .openclose div.title {
+        width: 84%;
+        display: inline-block;
+  }
+}
+
+@media (max-width: 60em) {
+  .accordion .openclose {
+    padding-bottom: 0.625em;
+    /* 10 /16 */
+    margin-bottom: 0.625em;
+    /* 10 /16 */
+  }
+}
+@media (min-width: 768px) {
+  .form-item:nth-child(odd) {
+    padding-right: 5%;
+  }
+  .openclose div.title {
+    display: inline;
+  }
+}
+@media (max-width: 50em) {
+  .accordion li {
+    margin-bottom: 1.25em;
+    /* 20 /16 */
+  }
+}
+@media (max-width: 50em) {
+  .accordion {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+	.gc-half.form-item {
+		  width: 100%;
+	}
+}

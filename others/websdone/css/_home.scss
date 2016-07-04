@@ -1,0 +1,165 @@
+/**** 
+	HOME
+***/
+
+.block {
+  float: left;
+  height: auto;
+}
+
+.block img {
+	max-width: 100%;
+}
+
+.page h1 {
+  font-size: 2.4em;   
+  width: 100%;
+  color: #f6dc87;
+  font-weight: bold;
+  padding: 1px;
+  display: inline-block;
+  line-height: 1;
+}
+#main {
+    width: 100%;
+    margin: 3% auto 2%;
+}
+.layout {
+    float: left;
+    width: 45%;
+    text-align: left;
+    padding-left: 1%;
+}
+.rightHand {
+  width: 55%;
+  float: right;
+}
+.main-nav {
+  position: relative;
+  z-index: 9999999;
+  margin: 0.7% 0 0 0;
+  float: right;
+  width: 22%;
+  a {
+    text-decoration: none;
+  }
+}
+.desc {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-bottom: 1%;
+}  
+.special {
+  float: left;
+  padding-right: 6%;
+}
+.list {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 55%;
+  float: right; 
+}
+.special div {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
+#skills {
+  div {
+      font-weight: bold;
+      font-size: 1.5em;
+  }
+}
+.block.blocks img {
+      height: 171px;
+}
+/** 
+  Images
+****/
+.isotope {
+    transition-property: height, width;
+}
+
+.isotope, .isotope .isotope-item {
+    transition-duration: 0.8s;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  max-width: 1200px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fullwidth {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+}
+.thumbImage {
+    float: left;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.center {
+  float: right;
+  width: auto;
+  border: 1px solid red;
+  display: block;
+}
+.grid-item {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+.grid-item {
+  float: right;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height: 200px; }
+
+.block.isotope-item.grid-item.full {
+   min-width: 86%;
+}
+/*** 
+  REFERENCES
+*////
+.references {
+    float: left;
+    clear: both;
+    .ref {
+       text-align: right;
+       color: #f6dc87;
+    }
+    .quotes {
+      background: url("../img/home/quote.png") no-repeat 0 7px;
+
+    }
+}

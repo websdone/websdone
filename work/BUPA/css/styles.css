@@ -1,0 +1,589 @@
+/* ----------- Base Variables ----------- */
+@font-face {
+  font-family: "Gotham-book";
+  src: url("../fonts/gotham-book-webfont.eot");
+  src: url("../fonts/gotham-book-webfont.svg#gotham_bookregular") format("svg"), 
+  url("../fonts/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/gotham-book-webfont.woff") format("woff"), 
+  url("../fonts/gotham-book-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham-bold";
+  src: url("../fonts/gotham-bold-webfont.eot");
+  src: url("../fonts/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/gotham-bold-webfont.woff") format("woff"), 
+  url("../fonts/gotham-bold-webfont.ttf") format("truetype"), 
+  url("../fonts/gotham-bold-webfont.svg#gotham_boldregular") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-medium';
+  src: url("../fonts/gotham-medium-webfont.eot");
+  src: url("../fonts/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/gotham-medium-webfont.woff") format("woff"), 
+  url("../fonts/gotham-medium-webfont.ttf") format("truetype"), 
+  url("../fonts/gotham-medium-webfont.svg#gotham_mediumregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/**** 
+General 
+****/
+* {
+  margin: 0;
+}
+
+html,
+body { height: 100%; }
+
+body {
+  color: #ffffff;
+    color: #333333;
+  line-height: 1.4em;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+  font-weight: 400;
+}
+
+html {
+	height: 100%;
+}
+img {
+	max-width: 100%;
+}
+.clear {
+  clear: both;
+}
+p, label {
+	margin-bottom: 3%;
+	font: 1.2em Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+a, footer a:hover {
+	color: #ffffff;
+	text-decoration: none;
+  font: 1em Gotham-book, Helvetica, Arial, sans-serif;
+}
+a:hover, a:active, .accordion a:hover {
+  color: #0079c8;
+}
+b {
+	font-weight: bolder;
+	font-size: 1em;
+}
+textarea{
+  width:400px;
+  height:100px;
+}
+p {
+   font: 1em Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+ h1 {
+    font-size: 3.750em;
+    letter-spacing: -0.02em;
+}
+h1, #portal-code h1 {
+    font: 2.8em Gotham-medium, Helvetica, Arial, sans-serif;
+    margin-bottom: 0.800em;
+    letter-spacing: -0.02em;
+}
+h2 {
+    font: 1.4em Gotham-bold, Helvetica, Arial, sans-serif;
+    margin-bottom: 0.800em;
+    letter-spacing: -0.02em;
+}
+/* Header 
+*****/
+header {
+  background-color: #ffffff;
+}
+header h2 {
+  padding: 0;
+}
+
+header img {
+    background: url("") no-repeat center center;
+    background-size: cover;
+    height: 23.750em;
+    z-index: 999;
+    width: 100%;
+}
+/* Main content 
+****
+
+/* HOME */
+.landing, body.landing-2 {
+  background: transparent url("../images/main-bg.jpg") repeat 0px 0 fixed;
+  width: 100%;	
+  height: 100%;
+  color: #ffffff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.landing form {
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+.logos {
+    margin: 1% 0 0.7% 3.8%;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+.landing article h1 {
+    font: 2.8em Gotham-medium, Helvetica, Arial, sans-serif;
+}
+ .landing  p {
+    font: 1em Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+.landing.landing-2  h2 {
+  font: 1.563em Gotham-medium, Helvetica, Arial, sans-serif
+}
+ .landing.landing-2  p {
+    font: 1em Gotham-book, Helvetica, Arial, sans-serif;
+}
+}
+.landing-2  .panel {
+    height: auto;
+    padding-bottom: 71px;
+} 
+.form-item button {
+    margin-top: 20px;
+}
+.ticks input {
+    float: left;
+    width: 3%;
+    margin-top: 3px;
+}
+.ticks span {
+    max-width: 94%;
+    display: inline-block;
+}
+.contactus textarea {
+   height: 150px;
+}
+.form-item.description {
+  width: 55%;
+  clear: both;
+  padding-right: 0;
+}
+.required {
+  margin-top: 20px;
+}
+hr {
+  margin: 32px 0;
+  float: left;
+  width: 100%;
+}
+.miadidas {
+  margin-top: 5px;
+}
+.panel {
+  background: url(../images/blue-panel-bg.png); 
+  background-color: #0079c8;
+  color: white;
+  padding: 4% 5% 2%;
+  width: 60%;
+  margin: 2% auto;
+}
+.panel a {
+	text-decoration: underline;
+  color: #ffffff;
+}
+article h1 {
+  font: 3.125em Gotham-medium, Helvetica, Arial, sans-serif;
+  /* 50 / 16 */
+  margin-bottom: 0.600em;
+  /*  40 / 50 */
+  /* 960 / 16 */
+  /* 800 / 16 */
+  /* 600 / 16 */
+  letter-spacing: 1.7px;
+    letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+#updateCopy p, .contactus #updateCopy p:first-child {
+  clear: both;
+}
+figure img {
+	width: 100%;
+}
+
+#main {
+  position: relative;
+  padding: 2.75em 1.25em 2.75em;
+}
+/*** CONTACT 
+****/
+.contactus textarea, .contactus  select, .contactus input[type="date"], .contactus input[type="datetime"], 
+.contactus input[type="datetime-local"], .contactus input[type="email"], .contactus input[type="month"], 
+.contactus input[type="number"], .contactus input[type="password"], .contactus input[type="search"], .contactus input[type="tel"], 
+.contactus input[type="text"], .contactus input[type="time"], .contactus input[type="url"], .contactus input[type="week"]{
+    border: 1px solid #999;
+    margin-top: 5px;
+}
+.contactus .logo {
+    position: absolute;
+    margin: 1% 0 1% 3.8%;
+    width: 6.5%;
+    height: auto;
+}
+.contactus form {
+      margin-top: 25px;
+}
+.contactus p.small-print {
+  display: block;
+    clear: both;
+}
+.contact {
+	  color: #333333;
+	  width: 80%;
+    margin: 0 auto 0 3%;
+}
+.contact h1 {
+    font-size: 3.750em;
+    letter-spacing: -0.02em;
+    font: 3.75em Gotham-medium, Helvetica, Arial, sans-serif;
+    letter-spacing: 1.7px;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    margin: 0 0 0.5em;
+}
+.contact h1 + p, .contact-list .phone-number, .phone-number {
+    font: 1.5em Gotham-book, Helvetica, Arial, sans-serif;
+    margin-bottom: 1.25em;
+}
+.updateCopy {
+    margin-bottom: 24px;
+    display: inline-block;
+}
+img.icon-phone {
+	  display: inline-block;
+}
+.phone-number img {
+	  width: 57px;
+    margin-left: -15px;
+}
+.phone-number span {
+    margin-top: -48px;
+    display: block;
+    margin-left: 4.3%;
+}
+#updateCopy p:first-child {
+  margin-bottom: 3.8%;
+}
+.small-print {
+  margin-bottom: 10px;
+}
+/* FAQ 
+*****/
+.faq h2 {
+  font: 1.4em Gotham-bold, Helvetica, Arial, sans-serif;
+  margin-bottom: 0.800em;
+}
+.faq li {
+  font: 1em Arial, Helvetica, sans-serif;
+  margin-bottom: 1.250em;
+  line-height: 1.4em;
+}
+.faq figure img {
+  height: 23.750em;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.logos {
+    max-width: auto;
+}
+/**** 
+  Footer 
+*****/
+footer {
+    background-color: #0079c8;
+    z-index: 999;
+    clear: both;
+    position: relative;
+    height: 65px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+footer .container {
+	  width: 79%;
+  	margin: 0 auto;
+}
+footer ul li {
+	  list-style-type: none;
+  	float: left;
+  	margin-right: 4%;
+  	margin-top: 23px;
+}
+.thanks {
+  position: absolute;
+  bottom: 0;
+}
+/**** 
+  FORM
+****/
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    background-color: white;
+    color: black;
+    outline: 0;
+    margin: 0;
+    padding: 8px 7px 8px;
+    text-align: left;
+    height: 3.2em;
+    vertical-align: top;
+    width: 100%;
+    border: none;
+}
+select.bupa {
+
+}
+.gc-half {
+    width: 50%;
+    float: left;
+}
+[class^="gc-"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  padding: 0em;
+  width: 100%;
+}
+.form-item {
+  margin-bottom: 20px;
+  position: relative;
+  width: 50%;
+  padding: 0;
+}
+.contact-form {
+  overflow: visible;
+  display: inline-block;
+  width: 100%;
+}
+input.btn {
+    background: url(../images/arrow.png) 91px 17px no-repeat;
+    margin-top: 20px;
+    text-decoration: none;
+    padding-right: 35px;
+}
+button, input[type="reset"], input[type="submit"], input[type="button"], .actions li a {
+  -webkit-appearance: none;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2.6;
+  outline: 0;
+  overflow: visible;
+  margin: 0;
+  padding: 8px 25px 8px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+}
+select {
+  background-image: url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+}
+.clearfix, .key-line-border, textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], table, header .container, header #main, #portal-code .form-group {
+  display: block;
+  overflow: hidden;
+}
+
+input[disabled=disabled],
+input[disabled=disabled]:hover {
+  background: #020202;
+}
+
+@-moz-document url-prefix() {
+  select {
+    padding-top: 11px;
+  }
+}
+
+.form-item {
+  margin-bottom: 1.500em;
+  /* 24 / 16 */
+  position: relative;
+}
+.form-item input[type="checkbox"] + label {
+  font-weight: normal;
+}
+
+.form-group {
+  margin-bottom: 1.500em;
+  /* 24 / 16 */
+}
+.form-group input[type="radio"] {
+  margin-right: 0.625em;
+  /* 10 / 16 */
+}
+.form-group input[type="radio"] + label {
+  margin-right: 3.750em;
+  /* 60 / 16 */
+}
+
+.ie8 input[type="text"] {
+  padding-top: 12px;
+}
+
+.ie8 select {
+  padding: 9px 7px 12px;
+}
+
+fieldset legend {
+  display: none;
+}
+input.btn {
+  background-color: #0079c8;
+  padding-right: 35px;
+}
+[class^="btn"] {
+    padding: 0.500em 3em 0.500em 2em;
+    display: inline-block;
+    position: relative;
+    font: 0.9em/2.6em Gotham-bold, Helvetica, Arial, sans-serif;
+    color: white;
+    border: 1px solid white;
+}
+/**** 
+  FAQ 
+***/
+ul {
+  list-style-type: none;
+}
+h2 {
+  font: 1.6em Gotham-bold, Helvetica, Arial, sans-serif;
+}
+/**** 
+  ACCORDION
+****/
+.accordion a {
+  color: #333333;
+}
+.accordion {
+  margin-top: 2.5em;
+  /* 800 / 16 */
+  /* 40 / 16 */
+}
+.accordion .openclose span {
+  margin-left: 0.8em;
+  font-size: 20px;
+}
+
+/* ----------- Accordion ------------- */
+.accordion li {
+  margin-bottom: 1.5em;
+  /* 800 / 16 */
+  /* 25 / 16 */
+}
+.accordion li em {
+  margin-bottom: 0.625em;
+  /* 10 / 16 */
+}
+.accordion .openclose {
+  color: #333333;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1.25em;
+  margin-bottom: 0.25em;
+  /* 960 / 16 */
+  display: block;
+  padding-bottom: 0.625em;
+  /* 20 / 32 */
+}
+.accordion .openclose span {
+  margin-left: 1.125em;
+  /* 16 / 50 */
+  font-size: 20px;
+}
+.accordion .openclose:hover {
+  color: #0079c8;
+}
+.accordion .accordion-body {
+  padding: 1em 0;
+  /* 16 / 16 */
+}
+/***
+  Cookies 
+  ***/
+table {
+    margin-bottom: 1.25em;
+    margin-top: 1.25em;
+    width: 100%;
+}
+table tr {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+table td {
+    border: 1px solid #cccccc;
+    border-right: none;
+} 
+  table td:last-child {
+    border-right:  1px solid #cccccc;
+  }
+  table table td, table table tr, table table td:last-child, table table td:last-child {
+    border: none;
+  }
+table th, table td {
+    padding: 9px 0px 8px 5px;
+    vertical-align: top;
+}
+table th {
+    font-weight: bold;
+    width: 33.333%;
+}

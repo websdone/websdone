@@ -1,0 +1,15 @@
+<div ng-repeat="work in workDetails">
+  <div data-myorder="{{ workDetails[$index].order }}"  class="mix {{ workDetails[$index].category }}" style="display: block;">
+      <section class="thumbImage">
+        <a href="{{ workDetails[$index].linkLanding }}" title="" >
+            <img ng-src="{{ workDetails[$index].img2 }}" alt="" >
+            <div class="thumbTextWrap">
+                <div class="thumbText">
+                   <h3 class="sectionTitle" ng-bind-html="work.title"> </h3>
+                   <p  ng-bind-html="work.carousel"> </p>                             
+                </div>
+            </div>
+            </a> 
+      </section>   
+  </div>
+</div>

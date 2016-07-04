@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ford</title>
+      <!-- Apple iPad Specific Meta information --> 
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
+      <meta name="apple-touch-fullscreen" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" /> 
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+
+      <!-- styles -->
+      <link rel="stylesheet" type="text/css" media="screen" href="styles/landscape.css" />
+
+      <!-- Javascript -->    
+      <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.4.3.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="scripts/video.js"></script> 
+		<script type="text/javascript" charset="utf-8" src="scripts/script.js"></script> 
+
+  </head>
+  <body onload="addListeners(document.getElementById('myVideo'));"> 
+        <section id="hotspots">
+            <div class='orangeBrand'> </div>
+            <article class="hotspots">
+                 <ul>
+                      <li class="front"> 
+                        <a href="" title="Cruise Control with Speed Limiter"> &nbsp; </a>       
+                      </li>
+                      <li class="top"> 
+                        <a href="" title="EcoBoost Engine"> &nbsp; </a>
+                      </li>
+                      <li class="tire"> 
+                        <a href="" title="Torque Vectoring Control"> &nbsp; </a>
+                      </li>
+                      <li class="door"> 
+                        <a href="" title="DAB Radio"> &nbsp; </a>
+                      </li>
+                      <li class="back"> 
+                        <a href="" title="Power Tailgate"> &nbsp; </a>
+                      </li>
+                       <li class="backTire"> 
+                         <a href="" title="Active Park Assist"> &nbsp; </a>
+                      </li>
+                      <div class="close"> </div>
+                 </ul>
+            </article>
+
+            <!-- footer -->    
+           	 <section id="footer">
+	               <ul>
+                    <li>
+                      <a href="cmd://openWeb(http://bit.ly/gRRnKq)" title="Request a test drive" class="drive"> 
+                        &nbsp;
+                      </a>
+                    </li>
+                    <li>
+                      <a href="cmd://openWeb(http://bit.ly/ekrgG6)" title="Request a brochure" class="brochure"> 
+                        &nbsp;
+                      </a>
+                    </li>
+                    <li>
+                      <a href="cmd://openWeb(http://bit.ly/eOujQZ)" class="informed"> 
+                        &nbsp;
+                      </a>
+                    </li>
+                </ul>       
+	          </section>
+         </section>
+         
+      <section class="video">  
+          
+          <video src="video/NEW/landscape.mov" id="myVideo" width="1024" height="748">
+              Sorry, this browser doesn't support the HTML5 video element.  Go download Safari! :)
+          </video>
+          
+         <a onclick="document.getElementById('myVideo').play();this.style.display='none';" title="Ford UK" class="button">
+            <span class="power" id="version1"></span>
+            <span class="power" id="version2"></span>          
+         </a>
+      </section> 
+      
+     <span id="notes" class="off" onclick="toggleNotes()"> </span></p>
+    <div id="eventslog"></div>
+    <!--script>
+      
+
+function stopVideo() {
+ if (document.width < 1024){
+	document.getElementById('myVideo').pause();
+ }else{
+	//alert('width has stayed the same');
+ }
+}
+
+setInterval('stopVideo()',1000);
+     
+    
+    </script-->	
+  </body>
+
+</html>
+
+

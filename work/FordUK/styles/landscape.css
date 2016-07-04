@@ -1,0 +1,262 @@
+
+  * {
+  	margin: 0;
+  	padding: 0;
+  }
+  
+  html
+  {
+    -webkit-tap-highlight-color:transparent;
+  }
+  
+  body {
+  	margin: 0;
+  	padding: 0;
+  	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+  	color: #000;
+  }
+  
+  #power {
+  	/*background: transparent url(../images/background-landscape.jpg) left top no-repeat;*/
+  }
+  
+  .orangeBrand {
+    background: transparent url(../images/orangeBgLd.gif) no-repeat;
+    width: 1024px; 
+    height: 11px;
+    position: absolute;
+    top: 0px;
+    left: 0px;    
+  }
+  
+  
+  #hotspots {
+  	background: transparent url(../images/hotspotLandscape4.jpg) left top no-repeat;
+    height: 748px;
+  	width: 1024px;
+  	position:absolute;
+  	top: 0px;
+  	left:0px;
+  	z-index:10;
+	  display: none;
+  } 
+   
+  .hide {  
+     z-index: 10!important;
+	 display:none;
+  } 
+  
+  .show {    
+	  z-index:100!important;
+  }
+  
+  .display{
+	  display: block!important;
+	  }
+	  
+  /* Intro buttons */
+  
+  .power {
+  	background: transparent url(../images/powerButtons2.png) no-repeat;
+  	width: 170px;  
+    height: 169.5px;
+  	position: absolute;
+  	top: 232px;
+  	left: 420px;
+  }
+  
+  span#version1{
+  	z-index:100;
+  }
+  
+  span#version2{
+  	background-position:left bottom;
+	  z-index:99;
+  }
+  
+  #eventslog {
+	display: none;  
+  }
+  /* Hotspots links */
+
+  /* top car hotspot */
+  .top a, 
+  li.top li.show {   
+    position: absolute;       
+    width: 43px;       
+    height: 36px;     
+    top: 257px;
+    left: 238px;
+    text-indent: -1000em; 
+    background: transparent url(../images/target.png) top right no-repeat;
+  } 
+
+   li.top .message {
+    background: transparent url(../images/messageTop2.png) top right no-repeat;
+  }
+  
+  /* front hotspot */
+  .front a, 
+  li.front li.show {   
+    position: absolute;       
+    width: 53px;       
+    height: 52px;     
+    left: 181px;
+    top: 426px;
+    text-indent: -1000em; 
+    background: transparent url(../images/target.png) top right no-repeat;
+  } 
+  
+   li.front span.message {
+      background: transparent url(../images/messageFront.png) top right no-repeat;
+   }
+   
+  /* front tire hotspot */
+  .tire a,
+  li.tire li.show {   
+    position: absolute;       
+    width: 43px;       
+    height: 49px;     
+    left: 415px;
+    top: 410px;
+    text-indent: -1000em; 
+    background: transparent url(../images/target.png) top right no-repeat;
+  } 
+  
+  li.tire span.message {
+    background: transparent url(../images/messageTire.png) top right no-repeat;
+  }
+  
+  /* door hotspot */
+  .door a,
+  li.door li.show {   
+    position: absolute;       
+    width: 44px;       
+    height: 65px;     
+    left: 572px;
+    top: 248px;
+    text-indent: -1000em; 
+    background: transparent url(../images/target.png) top right no-repeat;
+  } 
+  
+  li.door span.message {
+    background: transparent url(../images/messageDoor.png) top right no-repeat;
+  }  
+  
+  /* back hotspot */
+  .back a,
+  li.back li.show {   
+    position: absolute;       
+    width: 50px;       
+    height: 53px;     
+    left: 705px;
+    top: 181px;
+    text-indent: -1000em; 
+    background: transparent url(../images/target.png) top right no-repeat;
+  } 
+  
+  li.back span.message {
+    background: transparent url(../images/messageBack.png) top right no-repeat;
+  } 
+  
+  /* Back tire hotspot */
+  .backTire a,
+  li.backTire li.show {   
+    position: absolute;       
+    width: 64px;       
+    height: 45px;     
+    left: 712px;
+    top: 256px;
+    text-indent: -1000em; 
+    background: transparent url(../images/target.png) top right no-repeat;
+  } 
+  
+  li.backTire span.message {
+    background: transparent url(../images/messageBackTire.png) top right no-repeat;
+  } 
+   
+  li.hide {
+    display: none;
+  }
+  /* message */
+  .message {
+    width: 350px; 
+    height: 95px; 
+    display: block;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 476px;
+    left: 551px;
+    display: none;
+  }
+
+  .close {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 525px;
+      left: 858px;
+  }
+  
+ /* Video */
+  
+  .video {
+  	position:absolute;
+    top: 0px;
+  	left: 0px;
+    width: 1024px;      
+    height: 748px;       
+  	background-color: transparent;
+  	z-index:100;
+  }
+  
+ /* Footer */
+  
+  #footer {
+    width: 220px;
+    height: 110px;
+    margin-top: 560px;
+    margin-left: 30px;
+  }
+  
+  #footer ul li {
+    list-style-type: none;
+  }
+  
+  #footer a {
+    text-decoration: none;  
+   }
+  
+  
+  a.drive {
+    width: 230px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 30px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+  }
+  
+  a.brochure {
+    width: 230px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 30px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+  }
+  
+  a.informed {
+    width: 230px;
+    height: 35px;
+    margin-top: 0px;
+    margin-left: 30px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+  }
+ 

@@ -1,0 +1,220 @@
+.ch-info {
+  width: 140px;
+  height: 140px;
+}
+.ch-info .ch-img-1,
+.ch-info .ch-img-2,
+.ch-info .ch-img-3,
+.ch-info .ch-img-4,
+.ch-info .ch-img-5,
+.ch-info .ch-img-6,
+.ch-info .ch-img-7,
+.ch-info .ch-img-8,
+.ch-info .ch-img-9 {
+  margin-left: -9px;
+  margin-top: -9px;
+  width: 140px;
+  height: 140px;
+}
+.ch-info .ch-img-1:hover,
+.ch-info .ch-img-2:hover,
+.ch-info .ch-img-3:hover,
+.ch-info .ch-img-4:hover,
+.ch-info .ch-img-5:hover,
+.ch-info .ch-img-6:hover,
+.ch-info .ch-img-7:hover,
+.ch-info .ch-img-8:hover,
+.ch-info .ch-img-9:hover {
+  text-indent: -99999px;
+  height: 140px;
+  width: 140px;
+  margin-left: -9px;
+  margin-top: -9px;
+}
+.ch-info .ch-img-1 {
+  background: #9b334f url(../../agathachristie/img/circles/circle-pink.jpg) no-repeat center center;
+}
+.ch-info .ch-img-1:hover {
+  background: #000000 url(../../agathachristie/img/circles/lock.jpg) no-repeat center center;
+}
+.ch-info .ch-img-2 {
+  background: #588b8e url(../../agathachristie/img/circles/circle-green.jpg) no-repeat center center;
+}
+.ch-info .ch-img-2:hover {
+  background: #000000 url(../../agathachristie/img/circles/lock.jpg) no-repeat center center;
+}
+.ch-info .ch-img-3 {
+  background: url(../../agathachristie/img/circles/figure-1.jpg) no-repeat center center;
+}
+.ch-info .ch-img-3 .ch-info-back {
+  display: none;
+  background-image: none;
+}
+.ch-info .ch-img-4 {
+  background: url(../../agathachristie/img/circles/figure-2.jpg) no-repeat center center;
+}
+.ch-info .ch-img-4 .ch-info-back {
+  background-image: none;
+}
+.ch-info .ch-img-5 {
+  background: url(../../agathachristie/img/circles/figure-3.jpg) no-repeat center center;
+}
+.ch-info .ch-img-5 .ch-info-back {
+  background-image: none;
+}
+.ch-info .ch-img-6 {
+  background: url(../../agathachristie/img/circles/figure-4.jpg) no-repeat center center;
+}
+.ch-info .ch-img-6 .ch-info-back {
+  background-image: none;
+}
+.ch-info .ch-img-7 {
+  background: url(../../agathachristie/img/circles/figure-5.jpg) no-repeat center center;
+}
+.ch-info .ch-img-7 .ch-info-back {
+  background-image: none;
+}
+.ch-info .ch-img-8 {
+  background: url(../../agathachristie/img/circles/figure-6.jpg) no-repeat center center;
+}
+.ch-info .ch-img-8 .ch-info-back {
+  background-image: none;
+}
+.ch-info .ch-img-9 {
+  background: #9b334f url(../../agathachristie/img/circles/figure-3.jpg) no-repeat center center;
+}
+.ch-info .ch-img-9:hover {
+  background: #000000 url(../../agathachristie/img/circles/lock.jpg) no-repeat center center;
+}
+.ch-grid li {
+  float: left;
+  width: 140px;
+  height: 140px;
+  margin: 0 13px 13px 0;
+}
+.ch-grid li .ch-info p {
+  color: #fff;
+  padding: 56px 0px 0 0;
+  text-align: center;
+  font-size: 2.5em;
+}
+.ch-grid li .ch-info p a {
+  display: block;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+}
+.ch-grid li .ch-info p a:hover {
+  color: #fff222;
+  color: rgba(255, 242, 34, 0.8);
+}
+.ch-grid li .opens .ch-info:hover .ch-info-front {
+  border: 1px solid #FF0000;
+  text-indent: -99999px;
+  height: 140px;
+  width: 140px;
+  margin-left: -9px;
+  /*	margin-top: -9px; */
+
+}
+article.countdown {
+  text-align: center;
+  margin-top: 40px;
+}
+article.countdown h1 {
+  line-height: 0.5em;
+  font-weight: 300;
+}
+article.countdown p {
+  width: 700px;
+  margin: 0 auto;
+}
+article.countdown aside {
+  width: 37%;
+  margin: 0 auto;
+}
+aside.overlay {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  background-color: #f3f3f3;
+  height: auto;
+  width: 960px;
+  z-index: 1000;
+  text-align: left;
+  margin-left: -480px;
+  margin-right: -480px;
+}
+aside.overlay header h1 {
+  font-size: 1.5em;
+  margin: 0 0 6px 0;
+}
+aside.overlay header time,
+aside.overlay header p {
+  font-size: 0.85em;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  color: #70777c;
+  display: inline;
+}
+aside.overlay header p {
+  border-left: 1px solid #70777c;
+  padding-left: 3px;
+}
+aside.overlay article {
+  padding: 45px 30px 10px 60px;
+  margin-top: 30px;
+}
+aside.overlay a.closes {
+  background: url(../../agathachristie/img/circles/close-overlay.png) no-repeat center center;
+  width: 33px;
+  height: 34px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+aside.overlay a.closes:hover {
+  text-decoration: none;
+}
+aside.overlay .span6 {
+  margin: 0;
+}
+aside.overlay .span6.black {
+  background-color: #000;
+  padding: 36px 0 30px 5px;
+}
+aside.overlay .font-secondary {
+  margin-top: 8px;
+}
+.ch-grid .ch-img-1 .ch-info-back,
+.ch-grid .ch-img-2 .ch-info-back,
+.ch-grid .ch-img-3 .ch-info-back,
+.ch-grid .ch-img-4 .ch-info-back,
+.ch-grid .ch-img-5 .ch-info-back,
+.ch-grid .ch-img-6 .ch-info-back,
+.ch-grid .ch-img-7 .ch-info-back,
+.ch-grid .ch-img-8 .ch-info-back,
+.ch-grid .ch-img-9 .ch-info-back {
+  background-image: none;
+  display: none;
+  height: 0;
+  width: 0;
+}
+.overlay-shadow {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,53 @@
+
+    <!-- portfolio.html -->
+    <h1 class="quote">
+        Building simple, creative & effective websites
+    </h1> 
+  <section class="portfolio ">
+      <div class="controls"> 
+          <button class="filter" data-filter="all">All</button>
+          <button class="filter" data-filter=".category-1">Responsive</button>
+          <button class="filter" data-filter=".category-2">Music</button>
+          <button class="filter" data-filter=".category-3">Animations</button>
+          <button class="filter" data-filter=".category-4">e-mails</button>
+      </div>
+      <div id="Container" class="container experience">
+          <span p-landing ng-controller="sanmanuel"></span>
+          <span p-landing ng-controller="truphone"></span>
+          <span p-landing ng-controller="arabasco"></span>
+          <span p-landing ng-controller="smokefree"></span>
+          <span p-landing ng-controller="virginatlantic"></span>
+          <span p-landing ng-controller="kobo"></span>
+          <span p-landing ng-controller="bupa"></span>
+          <span p-landing ng-controller="bupaemail"></span>
+          <span p-landing ng-controller="musicPlayer"></span>
+          <span p-landing ng-controller="agatha"></span>
+          <span p-landing ng-controller="nissan"></span>
+          <span p-landing ng-controller="forduk"></span>
+          
+          
+          
+          <div class="gap"></div>
+          <div class="gap"></div>
+    </div>
+</section>       
+
+    <!-- mixitup -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+       $( document ).ready(function() {
+          $('#Container').mixItUp({
+          });
+        });
+
+
+        var $quote = $(".quote"),
+            mySplitText = new SplitText($quote, {type:"words, lines"}),
+            tl = new TimelineLite();
+
+            mySplitText.split({type:"chars, words"}); 
+            tl.staggerFrom(mySplitText.chars, 2, {scale:1, autoAlpha:0, rotationX:-180, delay: 0, ease:Back.easeOut}, 0.03)
+           
+      
+
+    </script>

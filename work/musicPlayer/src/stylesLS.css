@@ -1,0 +1,212 @@
+@media only screen and  (orientation:landscape) {
+	  * {
+	    margin: 0;
+	    padding: 0;
+	  }
+	  
+	  html { -webkit-tap-highlight-color:transparent;}
+	  
+	  body {
+	    font: 12px arial;
+	    background-color: #5D6669;
+	    margin: 0;
+	    padding: 0;
+	  }
+	  
+	 ul li {
+	   list-style-type: none;
+	 }
+	
+	.visibility {
+		visibility: hidden;	
+	}
+	
+	.item.ui-draggable.hide {
+		display: none;
+	}
+		
+	section h1 {
+	   background: transparent url(../img/titleLS.gif) no-repeat;
+	   width: 248px;
+	   height: 139px;
+	   margin: 10px 0 30px 0;
+	}
+	
+	/* CONTAINERS */
+	
+	section {
+		width: 1024px;
+		height: 748px;
+		background: transparent url(../img/bg-LS.png) no-repeat;
+		
+	}
+	
+	  #music_container {
+	     margin: 75px 0;
+	     width: 690px;
+	     height: 480px; /* here */
+	     float: left;
+	  }
+	           
+	  #toolbar {
+	      overflow: hidden;
+	      z-index: -2;
+	      background: transparent url(../img/radioCassette.gif) no-repeat;
+	      margin: 0;
+	      width: 681px;
+	      height: 473px;  
+	  }
+	  
+	 #toolbar .itunes {
+	 	background-color: transparent;
+	 	padding-bottom: 3px;
+	 	margin-left: 17px;
+		margin-top: -15px;
+	 }
+	  
+	 /* items */         
+	  #records {
+	      height: 87px;
+	      width: 150px;
+	      position: relative;
+	      z-index: 0;
+	      cursor: e-resize;
+	      margin: 0px;
+	  }
+	                
+	  #item_container {
+	    height: 630px;
+	    width: 275px;
+	    margin: 80px 0px 10px 20px;
+	    float: left;
+	  }
+	
+	  .item .ui-draggable {
+	    float: left;
+	  }
+	  
+	  .item {
+	      float: left;
+	      padding: 3px;
+	      cursor: move;
+	      z-index: 5;
+	  }   
+	  
+	  #records .item {
+	      padding: 0px;
+	      margin: -15px 0px;
+	      cursor: move;
+	      z-index: 5;
+	  }
+	     
+	  /* Tapes playing */
+	  
+	  .playing {
+	    width: 0px;
+	    height: 0px;
+	  }
+	  
+	  .playing img {
+	    margin:  -58px 0px 0px -10px;
+	  }
+	          
+	  .title {
+	      display: block;
+	      text-align: center;
+	      font-size: 14px;
+	      letter-spacing: -1px;
+	      font-weight: bold;
+	      cursor: move;
+	  }  
+	  
+	  .trackList {
+	    width: 693px;
+	    height: 198px;
+	    position: absolute;
+	    top: 135px;
+	    left: -286px;
+	    color: #000;
+	  }
+	  
+	   .trackList ul li {
+	     float: left;
+	     width: 675px;
+	     text-align: center;
+	   }
+	
+	   .trackList a {
+	     font-weight: bold;
+	     font-size: 14px;
+	     color: #000000;
+	     text-decoration: underline;
+	     margin: 9px auto 0px;
+	     display: block;
+	   }
+	   
+	   audio {
+	    width: 0;
+	    height: 0;
+	  }
+	  
+	  .trackList img {
+	    width: 709px;
+	    height: 191px;
+	    margin: -28px auto;
+	  }
+	  
+	  .container {
+	    position: absolute;
+	    width: 154px;
+	    height: 82px;
+	    top: 385px;
+	    left: 565px;
+	  }
+	  
+	  /* NAVIGATE */
+	  #navigate {
+	      width: 440px;
+	      margin: 0;
+	  }
+	  
+	  .ui-draggable.ui-droppable {
+	     position: absolute;
+	     top: 135px;
+	     left: 153px;
+	  }
+	  
+	  .item.ui-draggable {
+	    display: block;
+	    width: 130px;
+	    height: 84px;
+	    text-align: left;
+	  }
+	  /* NAVIGATE */
+	  
+	 .remove {
+	      text-decoration: none;
+	      cursor: pointer;
+	      position: relative;
+	      width: 60px;
+	      height: 45px;
+	      display: block;
+	      top: 90px;
+	      left: 110px;
+	  }
+	  
+	  .clear {
+	      clear: both;
+	  }
+	
+	.drag {
+      background: transparent url(../img/drag.png) no-repeat;
+      margin: 20px auto;
+      width: 240px;
+      height: 58px;  
+  }
+	
+	
+	/* AUDIO */
+	.hide {
+	   display: none;
+	}
+}

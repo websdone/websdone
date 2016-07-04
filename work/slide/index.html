@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=0,initial-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>iScroll demo: Carousel</title>
+
+	<script type="text/javascript" src="src/iscroll.js"></script>
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" media="screen" href="src/style.css" />
+	<!-- Javascript -->    
+    <script type="text/javascript" src="src/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="src/common.js"></script>
+    
+<script type="text/javascript">
+
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+	var myScroll;
+	
+	function loaded() {
+		myScroll = new iScroll('wrapper', {
+			snap: true,
+			momentum: false,
+			hScrollbar: false,
+            
+			onScrollEnd: function () {
+				document.querySelector('#indicator > li.active').className = '';
+				document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+				
+			
+				
+				var pageCur = this.currPageX + 1;
+			  
+			  	var pageCur1 = this.currPageX;
+				
+				//alert(pageCur1);
+				
+				switch (pageCur1)
+				{
+				case 0:
+					document.getElementById('image_01').src = 'img/TextLS/1.jpg';
+			
+				  break;
+				case 1:
+					document.getElementById('image_01').src = 'img/TextLS/2.jpg';
+				  
+				  break;
+				case 2:
+					document.getElementById('image_01').src = 'img/TextLS/3.jpg';
+				   
+				   break;
+				case 3:
+					document.getElementById('image_01').src = 'img/TextLS/4.jpg';
+			
+				  break;
+				case 4:
+					document.getElementById('image_01').src = 'img/TextLS/5.jpg';
+				  
+				  break;
+				case 5:
+					document.getElementById('image_01').src = 'img/TextLS/6.jpg';
+				   
+				  break;
+				  
+				case 6:
+					document.getElementById('image_01').src = 'img/TextLS/7.jpg';
+			
+				  break;
+				case 7:
+					document.getElementById('image_01').src = 'img/TextLS/8.jpg';
+				  break;
+ 
+				default:
+					document.getElementById('image_01').src = 'img/TextLS/1.jpg';
+				}
+				
+			}
+		 });
+	}
+	
+	document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+
+</head>
+<body class="landscape">
+	<div class="topFrame"> &nbsp; </div>
+	<div id="wrapper">
+		<div id="scroller">
+			<ul id="thelist">
+				<li>
+					<img src="img/pic01.jpg" title="Ejector Seat" />
+				</li>
+				<li>
+					<img src="img/pic02.jpg" title="Ejector Seat" />
+				</li>
+				<li>
+					<img src="img/pic03.jpg" title="Ejector Seat"  />
+				</li>
+				<li>
+					<img src="img/pic04.jpg" title="Ejector Seat" />
+				</li>
+				<li>
+					<img src="img/pic05.jpg" title="Ejector Seat" />
+				</li>
+				<li>
+					<img src="img/pic06.jpg" title="Ejector Seat" />
+				</li>
+				<li>
+					<img src="img/pic07.jpg" title="Ejector Seat" />
+				</li>
+				<li>
+					<img src="img/pic08.jpg" title="Ejector Seat" />	
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--  copy changes dinamycally -->
+	<div class="copy hide">
+	   <img class="title" src="img/title-LS.png" />
+       <img class="copy" id="image_01" src="img/TextLS/1.jpg" />
+    </div> 
+                      
+	<div id="nav">
+		<ul id="indicator">
+			<li class="active" id="button0" onclick="myScroll.scrollToPage(0);return false" >1</li>
+			<li id="button1" onclick="myScroll.scrollToPage(1);return false"  >2</li>
+			<li id="button2" onclick="myScroll.scrollToPage(2);return false"  >3</li>
+			<li id="button3" onclick="myScroll.scrollToPage(3);return false" >4</li>
+			<li id="button4" onclick="myScroll.scrollToPage(4);return false" >5</li>
+			<li id="button5" onclick="myScroll.scrollToPage(5);return false" >6</li>
+			<li id="button6" onclick="myScroll.scrollToPage(6);return false" >7</li>
+			<li id="button7" onclick="myScroll.scrollToPage(7);return false" >8</li>
+		</ul>
+	</div>
+	 <div class="tab"> &nbsp; </div>
+	 <div class="frameLD"></div>  
+</body>
+</html>

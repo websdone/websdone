@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+body {
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+a {
+    font-weight: bold;
+    color: #f29100;
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+header {
+    background-color: #350E51;
+    width: 100%;
+    height: 56px;
+}
+.height-100 {
+    height: 100%;
+}
+/* NAVBAR */
+ul {
+  list-style-type: none;
+ }
+
+nav>li>a:hover {
+  color: #f6dc87;
+  text-decoration: underline;
+  background-color: none;
+}

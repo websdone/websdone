@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/first-round.css" />
+    <link rel="stylesheet" href="css/sass-compiled.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-animate.js"></script>
+    <script src="js/script.js"></script>
+    <script src="directives/showWork.js"></script>
+</head>
+<body data-ng-app="websdoneApp" ng-controller="MainController">
+    <!--[if lt IE 7]>
+              <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section id="main" class="container-fluid">
+        <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header nav navbar-nav navbar-right">
+                    <a class="navbar-brand" href="/">
+                        <img src="img/logo/websdone.jpg" alt="WebsdoneLtd." >
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <li><a href="#home" class="btn btn-default"> Work </a></li>
+                    <li><a href="#about" class="btn btn-default">About</a></li>
+                </nav>
+            </nav>
+        </header>
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div class="{{ pageClass }} page height-100" ng-view></div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <nav class="secondary">
+            <ul class="right copyright">
+                <li> by WeBsDoNe Ltd. </li>
+            </ul>
+
+            <ul class="left social">
+
+            </ul>
+        </nav>
+    </footer>
+    <!-- Green sock animation -->
+    <script type="text/javascript" src="lib/GreenSockJS/src/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="directives/dream.js"></script>
+    <script type="text/javascript" src="lib/GreenSockJS/src/minified/SplitText.min.js"></script>
+
+    
+</body>
+</html>

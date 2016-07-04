@@ -1,0 +1,118 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html
+  {
+    -webkit-tap-highlight-color:transparent;
+  }
+  
+  body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  /* Body */
+  .container {
+    margin: 0;
+    padding: 0;
+    font: 12px normal Verdana, Arial, Helvetica, sans-serif;
+    color: #000;
+    background: transparent url(../img/Virgin_bgPortrait.jpg) no-repeat 0 0;
+    width: 768px; 
+    height: 1004px;
+  }
+  
+  .trick {
+    margin: 0;
+    padding: 0;
+    font: 12px normal Verdana, Arial, Helvetica, sans-serif; 
+    color: #000;
+    background: transparent url(../img/Virgin_bgPortrait.jpg) no-repeat 0 0;
+    width: 1px; 
+    height: 1px;  
+  }
+  
+  .slider {
+    background: transparent url(../img/sliderL2.gif) no-repeat 0 0;
+    width: 312px; 
+    height: 12px;   
+    margin: 555px 0 0 457px;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .move {
+      background: transparent url(../img/trailPortrait.png) no-repeat top right;
+      width: 54px; 
+      height: 62px;   
+      top: 583px;
+      left: 321.4px;
+      z-index: 5;
+      margin: 0;
+      z-index: 8;
+      position: absolute;
+  }
+   
+ 
+      
+  #spot2 {
+    display: none;
+  }
+
+  .portrait {
+    padding: 0px 0 0 0px;
+    position: absolute;
+  }
+
+  .text {
+    background: transparent url(../img/text1.png) no-repeat 0 0;
+    width: 657px;
+    height: 235px; 
+    top: 320px;
+    left: 40px;
+    position: absolute;
+  }
+  
+  .text2 {
+    background: transparent url(../img/text3.png) no-repeat 0 0;
+    width: 250px;
+    height: 63px; 
+    top: 590px;
+    left: 40px;
+    position: absolute;
+  }
+  
+  .pulse {
+    background: transparent url(../img/pulse.png) no-repeat 0 0;
+    width: 118px;
+    height: 118px; 
+    position: absolute;
+    top: 555px;
+    left: 290px;
+    width: 410px;
+    z-index: 1;
+  }
+  
+  .hide {
+    opacity: 0;
+  }
+  
+.hidden {  
+  
+ }
+ 
+ #fixed{
+  -webkit-transition-duration: 1s;
+  opacity: 0;
+}
+
+.show {
+    opacity: 1 !important;
+}
+ .hides {  
+   display: none;
+ }

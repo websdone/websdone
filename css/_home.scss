@@ -1,0 +1,180 @@
+/**** 
+	HOME
+***/
+.home {
+  h1.quote { 
+     margin-bottom: 30px;
+  }
+}
+.block {
+  float: left;
+  height: auto;
+  &.top {
+    top: 0 !important;
+  }
+  &.bottom {
+    top: 151px !important;
+  }
+}
+
+.block img {
+	max-width: 100%;
+}
+
+.page h1 {
+  font-size: 2.4em;   
+  width: 100%;
+  color: #f6dc87;
+  font-weight: bold;
+  padding: 1px;
+  display: inline-block;
+  line-height: 1;
+}
+#main {
+    width: 100%;
+    margin: 2% auto 90px;
+}
+.layout {
+    float: left;
+    width: 50%;
+    padding-left: 1%;
+    text-align: justify;
+}
+.rightHand {
+  width: 55%;
+  float: right;
+}
+.main-nav {
+  position: relative;
+  z-index: 9999999;
+  margin: 0.7% 0 0 0;
+  float: right;
+  width: 22%;
+  a {
+    text-decoration: none;
+  }
+}
+.desc {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-bottom: 1%;
+}  
+.special {
+  float: left;
+  padding-right: 6%;
+}
+.list {
+  float: right;
+  display: block;
+  height: 100%;
+  width: 50%;
+  max-height: 421px;
+}
+.special div {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
+#skills {
+  div {
+      font-weight: bold;
+      font-size: 1.5em;
+  }
+}
+.block.blocks img {
+      height: 171px;
+}
+
+/** 
+  Images
+****/
+.isotope {
+    transition-property: height, width;
+}
+
+.isotope, .isotope .isotope-item {
+    transition-duration: 0.8s;
+}
+.portfolio .thumbImage img {
+    max-width: 68%;
+}
+/* ---- grid ---- */
+
+.grid {
+  max-width: 1200px;
+}
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { width: 30%; }
+/* 2 columns */
+.grid-item--width2 { width: 40%; }
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*
+. {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+}
+*/
+.thumbImage {
+    float: left;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item {
+  float: right;
+  max-width: 200px;
+  max-height: 180px;
+  width: 28%;
+  margin: 0;
+  padding: 0;
+  margin-left: 4%;
+  display: block !important;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height: 200px; }
+
+.block.isotope-item.grid-item.full {
+   min-width: 86%;
+}
+/*** 
+  REFERENCES
+*////
+.references {
+    float: left;
+    clear: both;
+    .ref {
+       text-align: right;
+       color: #f6dc87;
+    }
+    .quotes {
+      background: url("../img/home/quote.png") no-repeat 0 7px;
+
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>
+<head>
+<!-- Website Design By: www.happyworm.com -->
+<title>jPlayer Development : HTML5 Media Event Inspector</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.media.event.inspector.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("#video_in_page_source_inspector").mediaEventInspector({mediaElement:document.getElementById("video_in_page_source")});
+});
+
+</script>
+
+<style type="text/css">
+	#video_in_page_source{
+		width: 1024px;
+		height: 748px;
+	}
+</style>
+</head>
+<body class="dev">
+		<div class="section demo_section_mid">
+			<video id="video_in_page_source" src="videos/tests/final_and_wavesh_1368x768_EveryKeyFrame_iPad - iPhone 4 - Apple TV 720p 5Mbps.m4v controls>
+				Your browser does not support the HTML5 Video spec.
+			</video>
+			<div id="video_in_page_source_inspector"></div>
+		</div>
+		<a onclick="document.getElementById('video_in_page_source').currentTime = 2; return false;">2</a>
+		<a onclick="document.getElementById('video_in_page_source').currentTime = 15; return false;">seek 15</a>
+		<a onclick="document.getElementById('video_in_page_source').currentTime = 55; return false;">seek 55</a>
+		
+		<div class="section demo_section_bot">
+			<!-- <p class="miaow">Tracks courtesy of Miaow <a href="http://www.miaowmusic.com">MiaowMusic.com</a></p> -->
+		</div>
+</body>
+</html>

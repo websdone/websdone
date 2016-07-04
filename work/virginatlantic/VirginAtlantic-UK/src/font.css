@@ -1,0 +1,28 @@
+@font-face {
+
+font-family: Gotham-Light;
+  src: url("../Fonts/Gotham-thin.otf") format("opentype");
+}
+
+ 
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url("../Fonts/Gotham-thin.otf") format("opentype");
+}
+
+p.text, .text2  {
+  font-family: Gotham-Light, verdana, Helvetica, Sans-Serif;
+}
+
+  .text,
+  .text2 {
+    color: #fff;
+    font-size: 43px;
+  }
+  
+  .text span,
+  .text2 span {
+    color: #fff;
+    font-size: 47px;
+  }

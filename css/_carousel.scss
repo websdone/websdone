@@ -1,0 +1,31 @@
+
+.ng-carousel button {
+	text-indent: -99999px;
+	width: 50px;
+  height: 50px;
+}
+.ng-carousel .carousel-arrow.carousel-arrow-left {
+    float: left;
+    button {
+      background: url('../img/home/arrow-back-t.png') no-repeat 0 0;
+    }
+}
+.ng-carousel .carousel-arrow.carousel-arrow-right {
+  float: right;
+  button {
+      background: url('../img/home/arrow-next.png') no-repeat 0 0;
+    }
+}
+.carousel-slide-copy {
+	z-index: -1px;
+}
+.carousel-arrows {
+	  margin-top: 31%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+.ng-carousel.slide {
+  
+}

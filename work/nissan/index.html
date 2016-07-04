@@ -1,0 +1,1321 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta name="viewport" content="width=768, user-scalable=0, initial-scale=1, maximum-scale=1">		<title>Nissan LEAF</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />  
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" /> 
+		<title>Nissan Leaf</title>
+		<script type="text/javascript" src="jquery-1.5.js"></script>
+		<script type="text/javascript" src="iscroll.js?v3.7.1"></script>
+        <script language="JavaScript" src="md5.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//alert('ready');
+				//document.location.href = "cmd://setWebLinks(test|http://www.google.com)";
+				
+				//play the plu-in video:
+				$("#btn_new_energy").click(function(event){
+					if(myElement.currentTime>=myElement.duration||isNaN(myElement.duration)||isNaN(myElement.currentTime)||myElement.currentTime==0||myElement.paused){
+						$("#btn_new_energy").fadeOut();
+						swapVideo(15);
+					}
+				});
+				var previous;
+				var currActiveBtn;
+				$("#NavPadOverlayTL").click(function(event){
+					//alert(myElement.currentTime+" : "+myElement.duration);
+					if(myElement.currentTime>=myElement.duration||isNaN(myElement.duration)||isNaN(myElement.currentTime)||myElement.currentTime==0||myElement.paused){
+						resetNavBtns();
+						if(currActiveBtn!=NavPadOverlayTL){
+							currActiveBtn = NavPadOverlayTL;
+							NavPadOverlayTL.style.backgroundImage = "url('images/NavPadOverlayTL.png')"
+						}
+						if(currentLocation == 'start'){
+							queueVideo(13, 'front');
+						}
+						else if(currentLocation == 'front'){
+							queueVideo(32, 'start');
+						}
+						else if (currentLocation == 'inside'){
+							queueVideo(26, 'front');
+						}
+						else if (currentLocation == 'rear'){
+							queueVideo(29, 'front');
+						}
+					}
+				});
+				
+				$("#NavPadOverlayTR").click(function(event){
+					//alert(myElement.currentTime+" : "+myElement.duration);
+					if(myElement.currentTime>=myElement.duration||isNaN(myElement.duration)||isNaN(myElement.currentTime)||myElement.currentTime==0||myElement.paused){
+						resetNavBtns();
+						if(currActiveBtn!=NavPadOverlayTR){
+							currActiveBtn = NavPadOverlayTR;
+							NavPadOverlayTR.style.backgroundImage = "url('images/NavPadOverlayTR.png')"
+						}
+						if(currentLocation == 'start'){
+							queueVideo(3, 'inside');
+						}
+						else if(currentLocation == 'front'){
+							queueVideo(25, 'inside');
+						}
+						else if (currentLocation == 'inside'){
+							queueVideo(31, 'start');
+						}
+						else if (currentLocation == 'rear'){
+							queueVideo(27, 'inside');
+						}
+					}
+				});
+				
+				$("#NavPadOverlayBL").click(function(event){
+					if(myElement.currentTime>=myElement.duration||isNaN(myElement.duration)||isNaN(myElement.currentTime)||myElement.currentTime==0||myElement.paused){
+						resetNavBtns();
+						displayVideo();
+					}
+				});
+				
+				$("#NavPadOverlayBR").click(function(event){
+					//alert(myElement.currentTime+" : "+myElement.duration);
+					if(myElement.currentTime>=myElement.duration||isNaN(myElement.duration)||isNaN(myElement.currentTime)||myElement.currentTime==0||myElement.paused){
+						resetNavBtns();
+						if(currActiveBtn!=NavPadOverlayBR){
+							currActiveBtn = NavPadOverlayBR;
+							NavPadOverlayBR.style.backgroundImage = "url('images/NavPadOverlayBR.png')"
+						}
+						if(currentLocation == 'start'){
+							queueVideo(19, 'rear');
+						}
+						else if(currentLocation == 'front'){
+							queueVideo(30, 'rear');
+						}
+						else if (currentLocation == 'inside'){
+							queueVideo(28, 'rear');
+						}
+						else if (currentLocation == 'rear'){
+							queueVideo(33, 'start');
+						}
+					}
+				});
+				
+				$('#theList1').click(function() {
+					if (previous == $(this).attr("id")){
+					}else{
+						$('#'+previous).parent().children('ul').hide(400);
+						$('#'+previous).css('color', '#ffffff');
+						$(this).parent().children('ul').toggle(400);
+						$(this).css('color', '#ffff00')
+					}
+					previous = $(this).attr("id");
+					return false;
+				});
+				$('#theList2').click(function() {
+					if (previous == $(this).attr("id")){
+					}else{
+						$('#'+previous).parent().children('ul').hide(400);
+						$('#'+previous).css('color', '#ffffff');
+						$(this).parent().children('ul').toggle(400);
+						$(this).css('color', '#ffff00')
+					}
+					previous = $(this).attr("id");
+					return false;
+				});						
+				$('#theList3').click(function() {
+					if (previous == $(this).attr("id")){
+					}else{
+						$('#'+previous).parent().children('ul').hide(400);
+						$('#'+previous).css('color', '#ffffff');
+						$(this).parent().children('ul').toggle(400);
+						$(this).css('color', '#ffff00')
+					}
+					previous = $(this).attr("id");
+					return false;
+				});		
+				$('#theList4').click(function() {
+					if (previous == $(this).attr("id")){
+					}else{
+						$('#'+previous).parent().children('ul').hide(400);
+						$('#'+previous).css('color', '#ffffff');
+						$(this).parent().children('ul').toggle(400);
+						$(this).css('color', '#ffff00')
+					}
+					previous = $(this).attr("id");
+					return false;
+				});										
+				$('#theList5').click(function() {
+					if (previous == $(this).attr("id")){
+					}else{
+						$('#'+previous).parent().children('ul').hide(400);
+						$('#'+previous).css('color', '#ffffff');
+						$(this).parent().children('ul').toggle(400);
+						$(this).css('color', '#ffff00')
+					}
+					previous = $(this).attr("id");
+					return false;
+				});	
+				$('#theList6').click(function() {
+					if (previous == $(this).attr("id")){
+					}else{
+						$('#'+previous).parent().children('ul').hide(400);
+						$('#'+previous).css('color', '#ffffff');
+						$(this).parent().children('ul').toggle(400);
+						$(this).css('color', '#ffff00')
+					}
+					previous = $(this).attr("id");
+					return false;
+				});						
+				
+			});		
+		</script>
+		<style type="text/css">
+			html{
+				-webkit-tap-highlight-color: rgba(251, 250, 200, 0.1);
+			}
+			body{
+				margin: 0px;
+				padding: 0px;
+				width: 1024px;
+				height: 748px;
+				background: black;
+			}
+			
+			#eventslog{
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				width: 200px;
+				height: 200px;
+				background: black;
+				overflow: hidden;
+				opacity: 0.9;
+				display: none;
+			}
+			
+			#intro{
+				position: absolute;
+				top: -20px;
+				background: black url('intro_background.jpg') no-repeat;
+				width: 1024px;
+				height: 768px;
+			}
+			
+			.btnButton{
+				position: absolute;
+			}
+			
+			#btnExplore{
+				top: 394px;
+				left: 40px;
+				width: 153px;
+				height: 50px;
+			}
+			
+			#btnSpecifications{
+				top: 674px;
+				left: 37px;
+				width: 159px;
+				height: 36px;
+			}
+			
+			#btnBrochure{
+				top: 674px;
+				left: 212px;
+				width: 192px;
+				height: 36px;		
+			}
+			
+			#video{
+				overflow: hidden;
+				width: 1024px;
+				height: 748px;
+			}
+			
+			#myVideo1{
+				/*
+				left: -172px;
+				width: 1368px;
+				height: 768px;
+				*/
+				position: absolute;
+				top: 0px;
+				left: -154px;
+				width: 1332px;
+				height: 748px;
+				opacity: 1;
+				background: transparent;
+			}
+			
+			
+			#myVideo2{
+				/*
+				left: -172px;
+				width: 1368px;
+				height: 768px;
+				*/
+				position: absolute;
+				top: -768px;
+				left: -154px;
+				width: 1332px;
+				height: 748px;
+				opacity: 0;
+				background: transparent;
+			}	
+			
+			.fadeIn{
+				opacity: 1 !important;
+				z-index: 0 !important;
+			}		
+			
+			.fadeOut{
+				opacity: 0 !important;
+				z-index: -1 !important;
+			}
+			
+			
+			.videoButton{
+				background-color: red;
+				opacity: 0.6;
+				z-index: 1;
+			}
+			
+			#NavPadBG{
+				position: absolute;
+				background: url('images/NavPadBG.png') no-repeat;
+				width: 391px;
+				height: 79px;
+				top: 580px;
+				left: 300px;
+				z-index: 502;
+				display: none;
+			}
+			
+			.NavButton{
+				font-family: Arial;
+				position: relative;
+				float: left;
+			}
+			
+			.NavButton p{
+				color: #FFFFFF;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			
+			#NavPadBG #power{
+				position: absolute;
+				left: 160px;
+				top: 12px;
+				background: url('images/ZE.png') no-repeat;
+				width: 60px;
+				height: 60px;
+			}
+			
+			
+			
+			#video #NavPadBG #NavPadOverlayTL{
+				margin-top: 0px;
+				width: 193px;
+				height: 42px;
+			}
+					
+			#video #NavPadBG #NavPadOverlayTL p{
+				padding: 0px 0px 0px 120px;
+			}			
+			
+			#video #NavPadBG #NavPadOverlayTR{
+				margin-top: 0px;
+				width: 197px;
+				height: 42px;
+			}	
+					
+			#video #NavPadBG #NavPadOverlayTR p{
+				padding: 0px 0px 0px 30px;
+			}				
+						
+			#video #NavPadBG #NavPadOverlayBL{
+				margin-top: 0px;
+				width: 193px;
+				height: 37px;
+			}
+			
+			#video #NavPadBG #NavPadOverlayBL p{
+				padding: 0px 0px 0px 120px;
+			}			
+			
+			#video #NavPadBG #NavPadOverlayBR{
+				margin-top: 0px;
+				width: 197px;
+				height: 37px;
+			}
+			
+			#video #NavPadBG #NavPadOverlayBR p{
+				padding: 0px 0px 0px 30px;
+			}			
+						
+	
+			
+			#data{
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				width: 500px;
+				height: 400px;
+				background: black;
+				opacity: 1;
+				color: #FFFFFF;
+				z-index: 10;
+				font-family: Arial;
+				font-size: 12px;
+				overflow: hidden;
+				padding: 10px;
+				z-index: 300;
+				display: none;
+			}
+			
+			/*final screen buttons*/
+			
+			.selectButtons{
+				position: absolute;
+				width: 1024px;
+				height: 748px;
+				z-index: 100;
+			}
+			
+			/**/
+			#frontButtons{
+				display: none;
+			}
+			
+			#frontButtons #frontButton1{
+				position: absolute; 
+				top: 400px;
+				left: 100px;
+				width: 200px;
+				height:50px;
+				background: red;
+
+			}
+			
+			#frontButtons #frontButton2{
+				position: absolute; 
+				top: 400px;
+				left: 400px;
+				width: 200px;
+				height:50px;
+				background: red;
+			}
+			
+			#frontButtons #frontButton3{
+				position: absolute; 
+				top: 400px;
+				left: 800px;
+				width: 200px;
+				height:50px;
+				background: red;
+			}	
+			
+			/**/
+			
+			#backButtons{
+				display: none;
+			}
+			
+			#backButtons #backButton1{
+				position: absolute; 
+				top: 400px;
+				left: 100px;
+				width: 200px;
+				height:50px;
+				background: blue;
+
+			}
+			
+			#backButtons #backButton2{
+				position: absolute; 
+				top: 400px;
+				left: 400px;
+				width: 200px;
+				height:50px;
+				background: blue;
+			}
+			
+			#backButtons #backButton3{
+				position: absolute; 
+				top: 400px;
+				left: 800px;
+				width: 200px;
+				height:50px;
+				background: blue;
+			}				
+			
+			
+			
+			/**/
+			
+			#insideButtons{
+				display: none;
+			}			
+			
+			#insideButtons #insideButton1{
+				position: absolute; 
+				top: 400px;
+				left: 100px;
+				width: 200px;
+				height:50px;
+				background: green;
+
+			}
+			
+			#insideButtons #insideButton2{
+				position: absolute; 
+				top: 400px;
+				left: 400px;
+				width: 200px;
+				height:50px;
+				background: green;
+			}
+			
+			#insideButtons #insideButton3{
+				position: absolute; 
+				top: 400px;
+				left: 800px;
+				width: 200px;
+				height:50px;
+				background: green;
+			}
+						
+					
+			#insideButtons #insideButton4{
+				position: absolute; 
+				top: 600px;
+				left: 100px;
+				width: 200px;
+				height:50px;
+				background: green;
+			}
+			
+			#insideButtons #insideButton5{
+				position: absolute; 
+				top: 600px;
+				left: 400px;
+				width: 200px;
+				height:50px;
+				background: green;
+			}
+			
+			#insideButtons #insideButton6{
+				position: absolute; 
+				top: 600px;
+				left: 800px;
+				width: 200px;
+				height:50px;
+				background: green;
+			}
+			
+			#header{
+				position: absolute;
+				background: url('images/header.png') no-repeat;
+				top: 0px;
+				left: 0px;
+				width: 1024px;
+				height: 52px;
+				display: none;
+				z-index:501;
+			}		
+			
+			#btnHome{
+				position: absolute;
+				left: 225px;
+				top: 5px;
+				width: 43px;
+				height: 38px;
+				opacity: 0.3;
+				
+			}
+			#btnDownload{
+				background: url('images/btnDownload.png') no-repeat;
+				position: absolute;
+				/*left: 275px;*/
+				left: 225px;
+				top: 5px;
+				width: 334px;
+				height: 38px;
+				
+			}
+			
+			#btnList{
+				position: absolute;
+				width: 43px;
+				height: 38px;
+				top: 5px;
+				left: 275px;
+				opacity: 0.3;
+			}			
+			
+			#list{
+				position: absolute;
+				top: 33px;
+				left: 107px;
+				background: url('images/list.png');
+				width: 376px;
+				height: 194px;
+				display: none;
+				z-index: 200;
+			}		
+			
+			.btnListItem{
+				width: 315px;
+				height: 41px;
+				margin-top: 2px;
+				margin-left: 30px;
+				
+			}
+			
+			#btnList1{
+				margin-top: 40px;
+			}
+			
+			#btnList2{
+			}
+			
+			#btnList3{
+			}			
+					
+					
+			/* specifications */
+			#specifications{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 1024px;
+				height: 768px;
+				background: #0d0b23;
+				display: none;
+			}	
+			
+			#specifications h1{
+				font-family: nissanagbol, sans-serif;
+				color: #ffff00;
+				font-size: 36px;
+				margin: 100px 0px 0px 60px;
+			}
+
+				
+			#wrapper {
+				margin-top: 30px;
+				margin-left: 60px;
+				height:510px;		/* Of course you need to specify the object height */
+				position:relative;	/* On older OS versions "position" and "z-index" must be defined (absolute | relative), */
+				z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+				width:920px;
+				/*background-color: #090d23;*/
+				overflow:hidden;	
+				font-size: 12px;
+				font-family: nissanagbol, sans-serif;
+				color: #ffffff;
+				font-weight: bold;	
+			}
+
+			#wrapper #controls{
+				position: absolute;
+				background: url('images/TableControls.png') no-repeat;
+				width: 40px;
+				height: 124px;
+				z-index: -1;
+				right: 0px;	
+			}
+
+			#scroller {
+				/*	-webkit-touch-callout:none;*/
+				-webkit-tap-highlight-color:rgba(0,0,0,0);
+				float:left;
+				width:100%;
+				padding:0;			
+				/*	-webkit-box-shadow:0 0 8px #555;	/* Don't use box shadows, they slow down drastically CSS animations */
+			}
+			
+			#scroller ul {
+				list-style:none;
+				padding:0;
+				margin:10px;
+				width:100%;
+				text-align:left;
+			}
+
+			#scroller li {
+				padding:0 10px;
+				width: 830px;
+				height:auto;
+				line-height:34px;
+				border-bottom:1px solid #3a3d4f;
+				background-color: #090d23;
+				font-size:19px;
+				text-transform: uppercase;
+				color: #FFFFFF;
+			}
+
+			#scroller li ul li{
+				font-weight: normal;	
+			}
+
+			#scroller li ul li div{
+				float: left;
+			}
+			
+			.first{
+				width: 45%;
+			}
+				
+			.second{
+				width: 54%;
+			}
+
+			#scroller li.odd{
+				text-transform: none;
+				background-color: #222639;
+				border: none;
+			}
+
+			#scroller li.even{
+				text-transform: none;
+				border: none;
+			}
+
+			#scroller li > a {
+				display:block;
+				font-family: nissanagbol, sans-serif;
+				font-size: 19px;	
+				color: #ffffff;
+				text-decoration: none;
+				font-weight: bold;
+				line-height:34px;	
+			}
+					
+			#scroller li > a:hover {
+					
+			}	
+			
+			@font-face {
+				font-family: nissanagbol;
+				src: url('nissanagbol.otf') format('opentype');
+			} 
+
+			#NavPadBG #power{
+				position: absolute;
+				left: 160px;
+				top: 12px;
+				background: url('images/ZE.png') no-repeat;
+				width: 60px;
+				height: 60px;
+			}
+						
+			.backToCar{
+				background: url('images/ZE.png') no-repeat;
+				width: 100px;
+				height: 40px;
+				padding: 20px 0px 0px 60px;
+				margin: 0 auto;
+			}
+				
+			.backToCar span{
+				font-size: 12px;
+				font-family: nissanagbol, sans-serif;
+				color: #ffffff;
+				font-weight: bold;
+			}
+
+			.skipIntro{
+				position: absolute;
+				left:460px;
+				top: 612px;
+				background: url('images/ZE.png') no-repeat;/**/
+				width: 100px;
+				height: 40px;
+				padding: 20px 0px 0px 60px;
+				margin: 0 auto;
+				display: none;
+				z-index:500;
+			}
+
+			.skipIntro span{
+				font-size: 12px;
+				font-family: nissanagbol, sans-serif;
+				color: #ffffff;
+				font-weight: bold;
+			}
+			
+			#theTechnology{
+				display: none;                                                                                                                                                                                           
+			}	
+			
+			#controls{
+				-webkit-transition-duration: 0.1s;
+			}
+			video{
+				/*
+				position:absolute;
+				left:0px;
+				top:0px;
+				width:1024px;
+				height:768px;
+				*/
+				position: absolute;
+				top: 0px;
+				left: -154px;
+				width: 1332px;
+				height: 748px;
+				/*
+				opacity: 1;
+				background: transparent;
+				*/
+				display:none;
+				z-index:0;
+			}
+			.hidden{
+				display:none;
+				/*z-index: -1;*/
+			}
+			#container{
+				position:fixed;
+				width:100%;
+				height:100%;
+				left:0px;
+				top:0px;
+			}
+			#btn_new_energy{
+				position: absolute;
+				top: 400px;
+				left: 50px;
+				width: 197px;
+				height: 35px;
+				background:url(images/btn_new_energy.png);
+				z-index:700;
+				/*opacity:1;*/
+				display:none;
+			}
+			#facebookButton{
+				top: 640px;
+				left: 750px;
+				width: 80px;
+				height: 80px;
+				background-image:url(images/facebook_btn.png);
+				background-repeat:no-repeat;
+			}
+		</style>
+
+	</head>
+	<body>
+		<section id="video">
+			<div class="selectButtons" id="frontButtons">
+				<!--The new energy-->
+				<div id="frontButton1">
+					The new energy
+				</div>
+				<!--The new design-->
+				<div id="frontButton2">
+					The new design
+				</div>
+				<!--The new safety-->
+				<div id="frontButton3">
+					The new safety
+				</div>				
+			</div>
+			
+			<div class="selectButtons" id="backButtons">
+				<!--The new air-->
+				<div id="backButton1">
+					The new air
+				</div>
+				<!--Real car-->
+				<div id="backButton2">
+					Real car
+				</div>
+				<!--Recycling-->
+				<div id="backButton3">
+					Recycling
+				</div>				
+			</div>			
+
+			<div class="selectButtons" id="insideButtons">
+				<!--The new signs-->
+				<div id="insideButton1">
+					The new signs
+				</div>
+				<!--The new drive-->
+				<div id="insideButton2">
+					The new drive
+				</div>
+				<!--The new connectivity-->
+				<div id="insideButton3">
+					The new connectivity
+				</div>
+				<!--The everyday car-->
+				<div id="insideButton4">
+					The everyday car
+				</div>
+				<!--The new interface-->
+				<div id="insideButton5">
+					The new interface
+				</div>
+				<!--Real safety-->
+				<div id="insideButton6">
+					Real safety
+				</div>							
+			</div>			
+									
+			<div id="NavPadBG">
+				<div class="NavButton" id="NavPadOverlayTL"><p>Front</p></div>
+				<div class="NavButton" id="NavPadOverlayTR"><p>Inside</p></div>
+				<div class="NavButton" id="NavPadOverlayBL"><p>Replay</p></div>
+				<div class="NavButton" id="NavPadOverlayBR"><p>Rear</p></div>
+				<div id="power"></div>
+			</div>
+			<div id="container">				
+				<div id="vidContainer1"><video id='vid' poster='' src='videos/converted/wavesh.mp4'></video></div>
+			   <div id="vidContainer2"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer3"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer4"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer5"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer6"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer7"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer8"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer9"><video id='vid' class='hidden' poster=''></video></div>
+			   <div id="vidContainer10"><video id='vid' class='hidden' poster=''></video></div>
+			   <div id="vidContainer11"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer12"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer13"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer14"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer15"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer16"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer17"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer18"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer19"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer20"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer21"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer22"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer23"><video id='vid' class='hidden'  poster=''></video></div>
+			   <div id="vidContainer24"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer25"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer26"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer27"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer28"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer29"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer30"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer31"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer32"><video id='vid' class='hidden' poster=''></video></div>
+			   <div id="vidContainer33"><video id='vid' class='hidden' poster='' ></video></div>
+			   <div id="vidContainer34"><video id='vid' class='hidden' poster='' ></video></div>
+			   <!--<div id="overlay"><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div></div>-->
+			</div>
+			<!--
+			<video id="myVideo1" src="videos/converted/wavesh.mp4">
+				Your browser does not support the HTML5 Video spec.
+			</video>
+			
+			<video id="myVideo2" src="">
+				Your browser does not support the HTML5 Video spec.
+			</video>			
+			-->			
+			<div class="skipIntro" id="skipIntro"><span>SKIP INTRO</span></div>
+			
+			<div class="btn_new_energy" id="btn_new_energy" ></div>
+		</section>
+        <section id="intro" style="">
+			<div class="btnButton" id="btnExplore"></div>
+            <div class="btnButton" id="facebookButton" onClick="document.location.href = 'cmd://openWeb(http://www.facebook.com/share.php?u=http://www.facebook.com/NissanLEAF.UK)'"></div>
+			<!--<div class="btnButton" id="btnSpecifications"></div>
+			<div class="btnButton" id="btnBrochure"></div>-->
+		</section>
+		<div id="header">
+			<!--<div id="btnHome"></div>
+			
+			<div id="btnList"></div>
+			<div id="list">
+				<div class="btnListItem" id="btnList1"></div>
+				<div class="btnListItem" id="btnList2"></div>
+				<div class="btnListItem" id="btnList3"></div>
+			</div>
+			-->
+			<div id="btnDownload"></div>
+		</div>
+    <span id="notes" class="off" onClick="toggleNotes()"> </span>
+    <div id="eventslog"></div>
+	</body>
+		<script type="text/javascript">
+			var intro = document.getElementById('intro');
+			var pathToVideos = 'videos/converted/';
+			var videos = Array(
+			'wavesh_crop.mov', //0			
+			'INTRO_ANIM_NO_EYES.mp4', //1
+			'STARTING_POINT.mp4', //2
+			'MOD01_PL00_ANIM_Lights_On.mov', //3
+			'MOD01_PL00_STAND.mp4', //4
+			'MOD01_PL02_ANIM.mp4', //5
+			'MOD01_PL02_REVERSE.mp4', //6
+			'MOD01_PL03_ANIM.mp4', //7
+			'MOD01_PL03_REVERSE.mp4', //8
+			'MOD01_PL05_ANIM.mp4', //9
+			'MOD01_PL05_REVERSE.mp4', //10
+			'MOD01_PL06_ANIM.mp4', //11
+			'MOD01_PL07_ANIM.mp4', //12
+			'MOD02_PL00_ANIM.mp4', //13
+			'MOD02_PL00_STAND.mp4', //14
+			'Plugged_In_And_Out_Crop.mov', //15
+			'MOD02_PL01_REVERSE.mp4', //16
+			'MOD02_PL02_ANIM.mp4', //17
+			'MOD02_PL02_REVERSE.mp4', //18
+			'MOD03_PL00_ANIM.mp4', //19
+			'MOD03_PL00_STAND.mp4', //20
+			'MOD03_PL01_ANIM.mp4', //21
+			'MOD03_PL01_REVERSE.mp4', //22
+			'MOD03_PL02_ANIM.mp4', //23
+			'MOD03_PL02_REVERSE.mp4', //24
+			'MOD05_PL01_ANIM_Lights_On.mov', //25
+			'MOD05_PL02_ANIM.mp4', //26
+			'MOD05_PL03_ANIM_Lights_on.mov', //27
+			'MOD05_PL04_ANIM.mp4', //28
+			'MOD05_PL05_ANIM.mp4', //29
+			'MOD05_PL06_ANIM.mp4', //30
+			'MOD05_PL07_ANIM.mp4', //31
+			'MOD05_PL08_ANIM.mp4', //32
+			'MOD05_PL09_ANIM.mp4' //33
+			
+			);
+			
+			var btnExplore = document.getElementById('btnExplore');
+			
+			btnExplore.addEventListener('click', clickHandler);	
+			
+			var NavPadBG = document.getElementById('NavPadBG');
+	
+			var btnDownload = document.getElementById('btnDownload');
+	
+			btnDownload.addEventListener('click',clickHandler);
+
+			var NavPadOverlayTL = document.getElementById('NavPadOverlayTL');
+			var NavPadOverlayTR = document.getElementById('NavPadOverlayTR');
+			var NavPadOverlayBL = document.getElementById('NavPadOverlayBL');
+			var NavPadOverlayBR = document.getElementById('NavPadOverlayBR');
+			
+			NavPadOverlayTL.addEventListener('click', clickHandler);
+			NavPadOverlayTR.addEventListener('click', clickHandler);
+			NavPadOverlayBL.addEventListener('click', clickHandler);
+			NavPadOverlayBR.addEventListener('click', clickHandler);
+			
+			var backButtons = document.getElementById('backButtons');
+			var insideButtons = document.getElementById('insideButtons');
+			var rearButtons = document.getElementById('rearButtons');
+			
+			var header = document.getElementById('header');
+			
+			
+			var cue;
+			var currentLocation = 'start';
+			
+			var loop = true;
+			var list = document.getElementById('list');
+			
+			var specifications = document.getElementById('specifications');
+			
+			var skipIntro = document.getElementById('skipIntro');
+			skipIntro.addEventListener('click', clickHandler);			
+			
+			var currentVideoObject = 1;
+			var currentVideo = 0;
+			function addListeners(vid) 
+			{
+    
+			}
+
+			var previousTime;
+			var timeStamp = [0,0];		
+			
+			function logEvent(evt, color) 
+			{
+
+			}
+			/*
+			function sendDeviceId(deviceID){
+				//alert(deviceID);
+				//need to hash the device id:
+				var hashedID = calcMD5(deviceID);
+				alert(hashedID);
+				//The following need to be changed to match the story/issue:
+				//_________________________________________
+				var issueDescription = "issue 4 UK";//this one MUST match the issue description in the xml
+				var interactionTag = "buttonClicked";
+				var	pageNumber = "p0";//this one will most likely stay the same
+				var storyIdNum = "2562";//magazine story id as per xml
+				//_________________________________________
+				
+				var date = new Date();
+				var yyyy = date.getFullYear();
+				var mm = date.getMonth() + 1;
+				var dd = date.getDate();
+				var hh = date.getHours();
+				var min = date.getMinutes();
+				var ss = date.getSeconds();
+				var mysqlDateTime = yyyy + '-' + mm + '-' + dd + ' ' + hh + ':' + min + ':' + ss;
+				var urlString = "http://www.projectmag.com/stats/stats.php?id="+hashedID+"&desc="+issueDescription+"&type=GenericInteraction&tag="+interactionTag+"&pg="+pageNumber+"&st="+storyIdNum+"&ts="+mysqlDateTime+"&dw=0";
+				//finally do the ajax call:
+				$.ajax({
+				  url: urlString,
+				  success: function(){
+					//alert('GenericInteraction logged');
+				  }
+				});
+			}
+			*/
+			var introHasPlayed =false;
+			function clickHandler(event){
+				switch(event.currentTarget.id){
+					case 'btnExplore' :
+						//document.location.href = "cmd://getDeviceID";
+						//document.location.href = "cmd://logStats(GenericInteraction|testing|0)";
+						document.location.href = "cmd://logStats(GenericInteraction|exploreButtonClicked|0)";
+						displayVideo();					
+						break;
+					case 'btnSpecifications' :
+						displaySpecifications();
+						break;
+					case 'btnBrochure' :
+						document.location.href = "cmd://openWeb(magazine/images/story_2562/html/PDF/Brochure.pdf)";
+						break;	
+					case 'btnHome':
+						if(myElement.currentTime>=myElement.duration||isNaN(myElement.duration)||isNaN(myElement.currentTime)||myElement.currentTime==0||myElement.paused){
+							displayIntro();
+						}
+						break;
+						
+					case 'btnDownload':
+						//we are handling this with a woodwing overlay
+						//as it doesn't work in the webview (app bug)
+						//document.location.href = "cmd://openWeb(http://itunes.apple.com/us/app/nissan-leaf/id422890310?mt=8)";
+						//document.location.href = "cmd://openWeb(http://www.google.com)";
+						//document.location.href = "http://itunes.apple.com/us/app/nissan-leaf/id422890310?mt=8";
+						//document.location.href = "cmd://openWeb(http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?cc=us&id=422890310&mt=8)";
+						break;
+						
+					case 'btnList':
+						toggleList();
+						break;	
+						
+					case 'btnList1':
+						displayVideo();
+						break;
+						
+					case 'btnList2':
+						displaySpecifications();
+						break;
+						
+					case 'btnList3':
+						displayBrochure();
+						break;		
+						
+					case 'backToCar':	
+						displayIntro();
+						break;
+						
+					case 'skipIntro':
+						skipIntro.style.display = 'none';
+						NavPadBG.style.display = 'block';
+						header.style.display = 'block';
+						playVideoWithID(2);
+						
+						break;
+				}
+			}
+			
+			function stopVideos(){
+				if(myElement){
+					myElement.pause();
+					myElement.style.display = 'none';
+				}
+				if(oldElement){
+					oldElement.pause();
+					oldElement.style.display = 'none';
+				}
+			}
+			function displayIntro(){
+				$("#btn_new_energy").fadeOut();
+				stopVideos();
+				//specifications.style.display = 'none';
+				//video.style.display = 'none';
+				if(myElement){
+					myElement.style.display = 'none';
+				}
+				if(oldElement){
+					oldElement.style.display = 'none';
+				}
+				header.style.display = 'none';	
+				//list.style.display = 'none';		
+				intro.style.display = 'block';
+        		NavPadBG.style.display = 'none';
+			}
+				var introPlayed = false;		
+			function displayVideo(){
+				//alert('displayVideo()');
+				playVideoWithID(1);
+				currentLocation = 'start';
+				if(introPlayed){
+					skipIntro.lastChild.innerHTML = 'SKIP INTRO';
+				}
+				introPlayed = true;
+				skipIntro.style.display = 'block';
+				//list.style.display = 'none';				
+				intro.style.display = 'none';
+				header.style.display = 'none';
+				NavPadBG.style.display = 'none';
+				//specifications.style.display = 'none';
+				//video.style.display = 'block';
+			}
+			
+			function displaySpecifications(){
+				stopVideos();
+				intro.style.display = 'none';
+				video.style.display = 'none';
+				list.style.display = 'none';				
+				header.style.display = 'block';
+				specifications.style.display = 'block';		
+			}
+
+			function displayBrochure(){
+			
+				document.location.href = "cmd://openWeb(magazine/images/story_2562/html/PDF/Brochure.pdf)";
+			}
+			
+			function toggleList(){
+				if (list.style.display == 'block'){
+					list.style.display = 'none';
+				}else{
+					list.style.display = 'block';
+				}
+			}
+			
+			function loaded() {
+				//alert('loaded');
+				setHeight();	// Set the wrapper height. Not strictly needed, see setHeight() function below.
+				
+				// Please note that the following is the only line needed by iScroll to work. Everything else here is to make this demo fancier.
+				//myScroll = new iScroll('scroller', {checkDOMChanges: true, desktopCompatibility:true, hScrollbar:false, vScrollbar:false});
+				
+				
+			}
+
+			// Change wrapper height based on device orientation. Not strictly needed by iScroll, you may also use pure CSS techniques.
+			function setHeight() {
+				//var headerH = document.getElementById('header').offsetHeight,
+				//	footerH = document.getElementById('footer').offsetHeight,
+				//	wrapperH = window.innerHeight - headerH - footerH;
+				//	document.getElementById('wrapper').style.height = wrapperH + 'px';
+			}
+
+			// Check screen size on orientation change
+			window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', setHeight, false);
+			
+			// Prevent the whole screen to scroll when dragging elements outside of the scroller (ie:header/footer).
+			// If you want to use iScroll in a portion of the screen and still be able to use the native scrolling, do *not* preventDefault on touchmove.
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			
+			// Load iScroll when DOM content is ready.
+			document.addEventListener('DOMContentLoaded', loaded, false);
+			
+			var currClipID = -1;
+			var currVid = 1;
+			var oldClip = 2;
+			//var myElement;
+			var myElement;
+			var oldElement;
+			
+			function playIntro(){
+			//we need to wait for a sec or so for it work properly
+				alert('playIntro');
+				playVideoWithID(1);	
+				
+				document.getElementById('skipIntro').lastChild.innerHTML = 'SKIP INTRO';
+				//set timeout to autoplay after video is played:
+			}
+			function swapVideo(videoNumber) {
+				//alert('swapVideo');
+				playVideoWithID(videoNumber+1);
+				
+			}
+			function queueVideo(videoNumber, locationString){
+	
+				var oldLocation = currentLocation;
+				
+					currentLocation = locationString;
+					//schedule hotspot appearance
+					if(currentLocation=='front'){
+						if(oldLocation=='rear'){
+							setTimeout(function(){
+					
+								$("#btn_new_energy").fadeIn();
+							},13000);
+						}else{
+							//alert('show hotspot: '+myElement.duration);
+							setTimeout(function(){
+						
+								$("#btn_new_energy").fadeIn();
+							},8500);
+						}
+					
+					}
+					swapVideo(videoNumber);				
+				return false;
+			}
+
+			function playVideoWithID(newID){
+				//alert('hi '+newID);
+				var myClipID = newID;
+				oldClip = currVid;
+				if(currVid==1){
+					currVid = 2;
+				}else{
+					currVid = 1;
+				}
+				oldElement = myElement;
+				myElement = document.getElementById('vidContainer'+myClipID).lastChild;
+				if(oldElement && (oldElement!=myElement)){
+				setTimeout(function(){
+					oldElement.style.display = "none";
+					oldElement.style.zIndex = 0;
+					myElement.style.zIndex = 100;
+					//this hack fixes some of the failed playing bug in the magazine:
+					//reload vid
+					if(isNaN(myElement.duration)||isNaN(myElement.currentTime)||myElement.currentTime==0||myElement.paused){
+						//alert('NAN problem????');
+						playVideoWithID(currClipId);
+					}
+					}, 100);
+				}
+				//myElement.poster =  'images/poster'+currVid+'.jpg';
+				myElement.src = pathToVideos + videos[(myClipID -1)];
+				myElement.style.display = "block";
+				myElement.load();
+				myElement.currenttime = 0;
+				myElement.play();
+				
+				currClipId = myClipID;
+				if(currentLocation!='front'){
+					$("#btn_new_energy").fadeOut();
+				}
+			}
+			//this function resets all the nav buttons to normal state
+			function resetNavBtns(){
+				NavPadOverlayTL.style.backgroundImage = "";
+				NavPadOverlayTR.style.backgroundImage = "";
+				NavPadOverlayBL.style.backgroundImage = "";
+				NavPadOverlayBR.style.backgroundImage = "";
+			
+			}
+			document.getElementById('vidContainer1').lastChild.addEventListener('ended', function(e){
+				skipIntro.lastChild.innerHTML = 'click to continue';		
+				
+			});
+			document.getElementById('vidContainer16').lastChild.addEventListener('ended', function(e){		
+				$('#btn_new_energy').fadeIn();
+			});
+			
+		</script>
+</html>

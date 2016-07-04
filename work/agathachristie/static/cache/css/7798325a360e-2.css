@@ -1,0 +1,271 @@
+.ch-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.ch-grid:after,
+.ch-grid .ch-item:before {
+  content: '';
+  display: table;
+}
+.ch-grid:after {
+  clear: both;
+}
+.ch-grid:last-child {
+  margin-bottom: 30px;
+}
+.ch-grid li {
+  width: 140px;
+  height: 140px;
+  display: inline-block;
+  margin: 0 9px;
+  padding: 0;
+  float: left;
+}
+.ch-grid li figure {
+  margin: 0;
+  padding: 0;
+}
+.ch-grid .ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.ch-grid .ch-item:hover .ch-info-wrap {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+.ch-grid .ch-item:hover .ch-info {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  -moz-transform: rotate3d(0, 1, 0, -180deg);
+  -o-transform: rotate3d(0, 1, 0, -180deg);
+  -ms-transform: rotate3d(0, 1, 0, -180deg);
+  transform: rotate3d(0, 1, 0, -180deg);
+}
+.ch-grid .ch-info-wrap {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  top: 8px;
+  left: 8px;
+  background: transparent;
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+.ch-grid .ch-info {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.ch-grid .ch-info > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ch-grid .ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  -moz-transform: rotate3d(0, 1, 0, 180deg);
+  -o-transform: rotate3d(0, 1, 0, 180deg);
+  -ms-transform: rotate3d(0, 1, 0, 180deg);
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+.ch-grid .ch-img-1 {
+  background: #9b334f url(../../agathachristie/img/circles/circle-pink.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-1 .ch-info-back {
+  background: #9b334f url(../../agathachristie/img/circles/lock.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-2 {
+  background: #588b8e url(../../agathachristie/img/circles/circle-green.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-2 .ch-info-back {
+  background: #588b8e url(../../agathachristie/img/circles/lock.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-3 {
+  background: url(../../agathachristie/img/circles/figure-1.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-3 .ch-info-back {
+  background: url(../../agathachristie/img/circles/figure-1.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-4 {
+  background: url(../../agathachristie/img/circles/figure-2.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-4 .ch-info-back {
+  background: url(../../agathachristie/img/circles/figure-2.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-5 {
+  background: url(../../agathachristie/img/circles/figure-3.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-5 .ch-info-back {
+  background: url(../../agathachristie/img/circles/figure-3.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-6 {
+  background: url(../../agathachristie/img/circles/figure-4.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-6 .ch-info-back {
+  background: url(../../agathachristie/img/circles/figure-4.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-7 {
+  background: url(../../agathachristie/img/circles/figure-5.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-7 .ch-info-back {
+  background: url(../../agathachristie/img/circles/figure-5.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-8 {
+  background: url(../../agathachristie/img/circles/figure-6.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-8 .ch-info-back {
+  background: url(../../agathachristie/img/circles/figure-6.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-9 {
+  background: #9b334f url(../../agathachristie/img/circles/figure-3.jpg) no-repeat center center;
+}
+.ch-grid .ch-img-9 .ch-info-back {
+  background: #9b334f url(../../agathachristie/img/circles/lock.jpg) no-repeat center center;
+}
+.ch-grid .ch-info p {
+  color: #fff;
+  padding: 45px 47px 0 0;
+  margin: 0 30px;
+  font-size: 2.5em;
+}
+.ch-grid .ch-info p a {
+  display: block;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+}
+.ch-grid .ch-info p a:hover {
+  color: #fff222;
+  color: rgba(255, 242, 34, 0.8);
+}
+article.countdown {
+  text-align: center;
+  margin-top: 40px;
+}
+article.countdown h1 {
+  line-height: 0.5em;
+  font-weight: 300;
+}
+article.countdown p {
+  width: 700px;
+  margin: 0 auto;
+}
+article.countdown aside {
+  width: 37%;
+  margin: 0 auto;
+}
+aside.overlay {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  background-color: #f3f3f3;
+  height: auto;
+  width: 960px;
+  z-index: 1000;
+  text-align: left;
+  margin-left: -480px;
+  margin-right: -480px;
+}
+aside.overlay header h1 {
+  font-size: 1.5em;
+  margin: 0 0 6px 0;
+}
+aside.overlay header time,
+aside.overlay header p {
+  font-size: 0.85em;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  color: #70777c;
+  display: inline;
+}
+aside.overlay header p {
+  border-left: 1px solid #70777c;
+  padding-left: 3px;
+}
+aside.overlay article {
+  padding: 45px 30px 10px 60px;
+  margin-top: 30px;
+}
+aside.overlay a.closes {
+  background: url(../../agathachristie/img/circles/close-overlay.png) no-repeat center center;
+  width: 33px;
+  height: 34px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+aside.overlay a.closes:hover {
+  text-decoration: none;
+}
+aside.overlay .span6 {
+  margin: 0;
+}
+aside.overlay .span6.black {
+  background-color: #000;
+  padding: 36px 0 30px 5px;
+}
+aside.overlay .font-secondary {
+  margin-top: 8px;
+}
+.overlay-shadow {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.searchbutton {
+  background-image: url(../../agathachristie/img/icons/search.png);
+}
+.searchbutton:hover {
+  background-image: url(../../agathachristie/img/icons/search-hover.png);
+}
+.select-wrap:after {
+  background-image: url(../../agathachristie/img/buttons/dropdown-button.png);
+}

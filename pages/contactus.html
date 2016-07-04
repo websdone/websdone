@@ -1,0 +1,32 @@
+<!-- about.html -->
+
+<article>
+    <h2 class="available">Available for <br /> London based contracts <br /> Worldwide remote work</h2>
+    <div class="details">
+    	<a href="mailto:mariana@websdone.co.uk"> mariana@websdone.co.uk </a>
+    	<p> 
+    		Company registered in England No:  7259098 <br />
+    		Registered office address: 
+    		63 Bowmans way <br /> Bedfordshire - LU6 3LF
+
+    	</p>
+    </div>
+</article>
+
+
+
+ <script type="text/javascript">
+   $( document ).ready(function() {
+    var $details = $(".available"),
+        mySplitText = new SplitText($details, {type:"words, chars"}),
+        tl = new TimelineLite();
+        // TITLE 
+       // TweenLite.set(".available", {perspective: 400});
+
+        mySplitText.split({type:"chars, words"}); 
+        tl.staggerFrom(mySplitText.chars, 2, {scale:1, autoAlpha:0,  rotationX:-180, ease:Back.easeOut}, 0.03)
+        // sECOND TEXT AND SKILLS
+        TweenMax.staggerFrom(".details", 1, { opacity: 0, delay: 2}, 0.4)
+        TweenMax.to($(".details"), 0.5, {css:{scale:1.5 }, ease:Back.easeOut});
+    });
+</script>
