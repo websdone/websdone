@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Websdoen portfolio",
   "main": "index.js",
+  "description": "Chillaxing",
+  "repository": "https://github.com/websdone/websdone.git",
   "dependencies": {
     "angular-sanitize": "^1.5.7",
     "connect-modrewrite": "^0.9.0"
