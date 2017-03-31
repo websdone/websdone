@@ -1,9 +1,8 @@
 {
   "name": "websdone",
   "version": "1.0.0",
-  "description": "Websdoen portfolio",
+  "description": "websdone",
   "main": "index.js",
-  "description": "Chillaxing",
   "repository": "https://github.com/websdone/websdone.git",
   "dependencies": {
     "angular-sanitize": "^1.5.7",

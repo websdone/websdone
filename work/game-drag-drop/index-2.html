@@ -1,0 +1,183 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+
+<title>THE A MAZE QUIZ </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/ui-touch-punch.js"></script>
+
+
+<script type="text/javascript">
+
+  var correctCards = 0;
+  var correct = 0;
+
+  $( init );
+
+  function init() {
+
+    // Hide the success message
+     $('#successMessage, .incorrectMessage, #scoreMessage, .incorrectMessage2').hide();
+
+    // Reset the game
+    correctCards = 0;
+    $('#cardPile').html( '' );
+    $('#cardSlots').html( '' );
+
+    // ANSWERS
+    var numbers = [];
+      numbers [ 0 ] = { x:1, y:'<img src="img/artist/TALOR.png" >' };
+      numbers [ 1 ] = { x:2, y:'<img src="img/artist/ONE_DIRECTION.png" >' };
+      numbers [ 2 ] = { x:3, y:'<img src="img/artist/U2.png" >' };
+      numbers [ 3 ] = { x:4, y:'<img src="img/artist/ROLLING_STONE.png" >' };
+      numbers [ 4 ] = { x:5, y:'<img src="img/artist/Kenny_Chesney.png" >' };
+
+    numbers.sort( function() { return Math.random() - .5 } );
+
+    for ( var i=0; i<5; i++ ) {
+      $('<div>' + numbers[i].y + '</div>').data( 'number', numbers[i].x ).attr( 'id', 'card1' ).appendTo( '#cardPile' ).draggable( {
+        containment: '#content',
+        stack: '#cardPile div',
+        cursor: 'move',
+        revert: false
+      } );
+    }
+
+    // Create the slots
+    var words = [];
+      words [ 0 ] = {x:1, y:'<img src="img/artist/01_ONE.png" >'};
+      words [ 1 ] = {x:2, y:'<img src="img/artist/02_TWO.png" >'};
+      words [ 2 ] = {x:3, y:'<img src="img/artist/03_THREE.png" >'};
+      words [ 3 ] = {x:4, y:'<img src="img/artist/04_FOUR.png" >'};
+      words [ 4 ] = {x:5, y:'<img src="img/artist/05_FIVE.png" >'};
+
+
+    for ( var i=1; i<=5; i++ ) {
+      $('<div>' + words[i-1].y + '</div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
+        accept: '#cardPile div',
+        hoverClass: 'hovered',
+        drop: handleCardDrop
+      });
+    }
+  }
+
+  function submit( event, ui  ) {
+       
+       // check how many correct class - if less -->
+      if ( $('.correct').length < 5 ) {
+        $('.incorrectMessage').show();
+        $('#sucesstMessage').hide();
+        $('#cardPile #card1').css('left', '0');
+        $('.correct').removeClass('correct'); // remove all class 'correct' to reset it
+        setTimeout(function(){
+           $('.incorrectMessage').hide();
+           init(); // Reset all the cards again to force new positions
+        },1000);
+
+      }
+
+     // check how many correct class - if 5 correct classes
+
+    if ( $('.correct').length == 5 ) {
+      $('.countdown-callback').data('countdown').update(+(new Date) + 10000).stop(); // stops the counter
+      $('.incorrectMessage').hide();
+      $('#successMessage').show();      
+      $('.correct').removeClass('correct'); // remove all class 'correct' to reset it
+        setTimeout(function(){
+            window.location="index.html"; 
+        },10000); 
+    }
+  }
+
+  function handleCardDrop( event, ui ) {
+    var slotNumber = $(this).data( 'number' );
+    var cardNumber = ui.draggable.data( 'number' );
+
+    // If the card was dropped to the correct slot,
+    // add class 'correct'
+
+    if ( slotNumber == cardNumber ) {
+      ui.draggable.addClass( 'correct' ); // add class correct 
+      ui.draggable.position( { of: $(this), my: '0 0', at: '0 0' } );
+      ui.draggable.draggable( 'option', 'revert', false );
+      correctCards++;
+    } 
+
+    // If the card was dropped to the incorrect slot remove class 'correct'
+    if ( slotNumber != cardNumber ) {
+      ui.draggable.removeClass( 'correct' ); // remove class correct 
+      ui.draggable.position( { of: $(this), my: '0 0', at: '0 0' } );
+    } 
+  }
+
+  </script>
+
+</head>
+  <body>
+    <div class="wideBox">
+      <h1> THE A MAZE QUIZ </h1>
+      <section class="timers">
+          <!-- <div class="scored"> 
+              0/5
+          </div> -->
+          <div class="time"> 
+              <div class="countdown-callback">60 sec</div>
+          </div>
+      </section>
+      <article class="questions"> 
+         <p> What were the top 5 highest grossing tours of 2015? </p>
+      </article> 
+
+       <div id="successMessage">
+          <a href="index.html" title="" class="play">Play Again</a> 
+       </div>
+
+       <div class="incorrectMessage2">
+          <a href="index.html" title="" class="play"> Play again </a>
+       </div>
+
+        <div class="incorrectMessage">
+          &nbsp;
+       </div>
+
+      <div id="content">         
+          <div id="cardPile"> </div>
+          <div id="cardSlots"> </div>
+      </div>
+
+      <footer>
+          <a class="submit" onclick="submit()"> &nbsp; </a>
+      </footer> 
+  <script type="text/javascript" src="js/countdown.js"></script>
+  
+  <script type="text/javascript">
+    $(function() {
+      $('.countdown-callback').countdown({
+        date: +(new Date) + 60000,
+         render: function(data) {
+          var el = $(this.el);
+          el.empty()
+            .append("<span>" + this.leadingZeros(data.min, 1) + " : </span>")
+            .append("<span>" + this.leadingZeros(data.sec, 2) + "</span>");
+        },
+        onEnd: function() {
+          $(this.el).addClass('ended');
+          $('.incorrectMessage2').show();
+           setTimeout(function(){
+              window.location="index.html"; 
+          },10000); 
+        }
+        }).on("click", function() {
+          $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
+        });
+
+      });
+    </script>
+  </body>
+</html>
+

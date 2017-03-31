@@ -1,0 +1,42 @@
+
+/* Simple css to create 2 colum grid */
+
+#dragBox1, #dragBox2 { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0 0 2.5em; 
+	float: left; 
+	margin-right: 10px; 
+}
+
+#dragBox1 li, #dragBox2 li { 
+	cursor: move; 
+	margin: 0 5px 5px 5px; 
+	padding: 5px; 
+	font-size: 1.2rem; 
+	    width: 87%;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #000;
+    background-color: #ff4d4d; 
+    color: #ffffff;
+}
+
+.ui-state-default {
+	border: 1px solid #000000;
+    background-color: #999999; 
+    color: #ffffff;
+}
+
+/* new order and submit */
+input[type=submit], .newOrder1, .newOrder2 {
+	clear: both;
+	display: block;
+	margin: 1% 0;
+}
+
+h1 {
+	font-size: 1.2rem; 
+	color: red;
+}

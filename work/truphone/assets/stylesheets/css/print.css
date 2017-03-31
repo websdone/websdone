@@ -1,0 +1,106 @@
+@media print {
+  /* line 8, print.scss */
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* line 15, print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 20, print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 24, print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 29, print.scss */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 34, print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 40, print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 44, print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 49, print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 53, print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 60, print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 67, print.scss */
+  select {
+    background: #fff !important;
+  }
+
+  /* line 72, print.scss */
+  .navbar {
+    display: none;
+  }
+
+  /* line 76, print.scss */
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+
+  /* line 83, print.scss */
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+
+  /* line 87, print.scss */
+  .label {
+    border: 1px solid #000;
+  }
+
+  /* line 91, print.scss */
+  .table {
+    border-collapse: collapse !important;
+  }
+
+  /* line 95, print.scss */
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}

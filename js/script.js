@@ -3,9 +3,7 @@
 var websdoneApp = angular.module('websdoneApp', ['ngRoute', 'ngAnimate', 'angular-carousel', 'ngSanitize']);
 
 // Configure route to pages
-websdoneApp.config(function( $locationProvider, $routeProvider) {
-  $locationProvider.html5Mode(true);
-
+websdoneApp.config(function($routeProvider) {
 	$routeProvider
 	// routes go here
 	.when('/', {
@@ -37,6 +35,10 @@ websdoneApp.config(function( $locationProvider, $routeProvider) {
     templateUrl : 'pages/portfolio-truphone.html',
     controller : 'truphone'
   })
+  .when('/portfolio-polished', {
+    templateUrl : 'pages/portfolio-polished.html',
+    controller : 'truphone'
+  })
    .when('/portfolio-agatha', {
     templateUrl : 'pages/portfolio-agatha.html',
     controller : 'agatha'
@@ -65,6 +67,10 @@ websdoneApp.config(function( $locationProvider, $routeProvider) {
     templateUrl : 'pages/portfolio-sanmanuel.html',
     controller : 'sanmanuel'
   })
+  .when('/portfolio-youtube', {
+    templateUrl : 'pages/portfolio-youtube.html',
+    controller : 'youtube'
+  })
   .when('/portfolio-smokefree', {
     templateUrl : 'pages/portfolio-smokefree.html',
     controller : 'smokefree'
@@ -82,17 +88,35 @@ websdoneApp.config(function( $locationProvider, $routeProvider) {
     controller : 'bupaemail'
   })
     .otherwise({ redirectTo: '/'});
-
 });
 
-websdoneApp.use('/',express.static(__dirname + '/public'));
-
-// Create the controller and inject Angular's $scope
 websdoneApp.controller('MainController', function($scope) {
-	// create message for the page views
-	//$scope.message = 'this is the home page';
 	// Add class to the page
 	$scope.pageClass = 'home';
+});
+
+// Create the controller and inject Angular's $scope
+websdoneApp.controller('NavController',  function ($scope) {
+  // Add class to the page
+  $scope.pageClass = 'home';
+
+  $scope.states = {};
+  $scope.states.activeItem = 'item1';
+
+  // menu items  
+  $scope.menuLinks = [
+      { menu: 'About', path: 'home', id: 'item1' },
+      { menu: 'Skills', path: 'skills', id: 'item2' },
+      { menu: 'Portfolio', path: 'portfolio', id: 'item3' },
+      { menu: 'Contact', path: 'contact', id: 'item4' }   
+  ]
+
+  // change active state
+  //$scope.selectedIndex = 0; /* first one set active by default */
+  $scope.select= function(i) {
+    $scope.selectedIndex=i;
+  };
+
 });
 
 websdoneApp.controller('ContactController', function($scope) {
@@ -115,8 +139,3 @@ websdoneApp.controller('PortfolioController', function($scope) {
 websdoneApp.controller('Ctrl', function($scope, Carousel) {
     $scope.Carousel = Carousel;
 });
-
-// $(".btn").click(function(){
-// 	$(".btn.active").removeClass('active');
-// 	$(this).addClass('active');
-// });

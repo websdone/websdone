@@ -1,0 +1,8 @@
+<ul class="nav navbar-nav navbar-right" id="chunky-buttons">  
+  <li class="chunky" >
+      <a href="#{{ menuLinks[$index].path }}" class="btn" ng-repeat="links in menuLinks"
+           ng-class="{'active': menuLinks[$index].id == states.activeItem}" 
+           ng-click="states.activeItem=menuLinks[$index].id">  {{ menuLinks[$index].menu }} 
+      </a> 
+  </li>              
+</ul>

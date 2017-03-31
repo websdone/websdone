@@ -28,10 +28,10 @@ angular.module('websdoneApp')
         img: 'img/portfolio/truephone.png',
         img2: 'img/portfolio/thumb/truphone-2.jpg',
         title2: 'User Interface Developer', 
-        desc:'Extreme detail needed for responsiveness in all the website sections, full development from scratch including slicing of images',
-        link: 'http://websdone.co.uk/work/truphone/',
+        desc:'Responsive front-end development for compatibility with iPhone, Samsung, iPads, Galaxy, modern browsers',
+        link: 'http://chillaxing.online/chillaxing/websdone/truphone',
         linkLanding: '#portfolio-truphone',
-        carousel: '<p> HTML5 -  SASS - jQuery </p>',
+        carousel: '<p> HTML5 -  SASS - jQuery - Bootstrap</p>',
         class: 'top',
         category: 'category-1',
         order: '1',
@@ -69,7 +69,7 @@ angular.module('websdoneApp')
         img2: 'img/portfolio/thumb/iscoll-virgin.png',
         title2: 'User Interface Developer', 
         desc:'Virgin Atlantic add development working for Seven Squared @ Project magazine, scroll down and see!',
-        link: 'http://websdone.co.uk/work/virgin-iscoll/index.html',
+        link: 'http://chillaxing.online/chillaxing/websdone/virgin-iscoll/',
         linkLanding: '#portfolio-virginatlantic',
         carousel: '<p> iScroll - jqtouch </p> <p> jQuery </p>  ',
         class: 'top',
@@ -109,7 +109,7 @@ angular.module('websdoneApp')
         img2: 'img/portfolio/thumb/ford.png',
         title2: 'Interactive Web Developer', 
         desc:'Ford HTML5 web development for ipad 1 add development working for Seven Squared @ Project magazine',
-        link: 'http://chillaxing.online/websdone/FordUK/',
+        link: 'http://chillaxing.online/chillaxing/websdone/FordUK/',
         carousel: '<p> JS - jQuery - CSS </p> ',
         linkLanding: '#portfolio-forduk',
         class: 'bottom',
@@ -129,7 +129,7 @@ angular.module('websdoneApp')
         img2: 'img/portfolio/thumb/nissan.png',
         title2: 'Interactive Web Developer', 
         desc:'Nissan HTML5 web development for ipad 1 add development working for Seven Squared @ Project magazine',
-        link: 'http://chillaxing.online/websdone/nissan/',
+        link: 'http://chillaxing.online/chillaxing/websdone/nissan/',
         linkLanding: '#portfolio-nissan',
         carousel: ' <p> jQuery - JS </p> ',
         class: 'bottom',
@@ -149,7 +149,7 @@ angular.module('websdoneApp')
         img2: 'img/portfolio/thumb/casette.gif',
         title2: 'Interactive Web Developer', 
         desc:'Music player developed with jQuery and CSS3 - drag the cassette or stop it to play another one!',
-        link: 'http://websdone.co.uk/work/musicPlayer/index.html',
+        link: 'http://chillaxing.online/chillaxing/websdone/musicPlayer/index.html',
         linkLanding: '#portfolio-musicPlayer',
         carousel: '<p> JS - jQuery </p>',
         class: 'top',
@@ -200,18 +200,18 @@ angular.module('websdoneApp')
     ];
 }])
 
-.controller('kobo', ['$scope', function($scope) {
-    $scope.pageClass = 'Kobo';
+.controller('polished', ['$scope', function($scope) {
+    $scope.pageClass = 'polished';
 
     $scope.workDetails = [{ 
-        title: 'Kobo', 
-        img: 'img/portfolio/kobo.png',
-        img2: 'img/portfolio/thumb/kobo.jpg',
+        title: 'PolishedRock Ltd.', 
+        img: 'img/portfolio/polished.png',
+        img2: 'img/portfolio/thumb/polished.jpg',
         title2: 'Front-end developer', 
-        linkLanding: '#portfolio-kobo',
-        desc:'Developing all HTML pages for advertising campaigns',
-        link: 'http://websdone.co.uk/work/build/book.html',
-        carousel: '<p>HTML5 - CSS3 </p>',
+        linkLanding: '#portfolio-polished',
+        desc:'Web developer',
+        link: 'http://polishedrockltd.co.uk',
+        carousel: '<p>HTML5 - CSS Animations - SASS - Responsive - PHP - jQuery </p>',
         class: 'bottom',
         category: 'category-1',
         order: '11',
@@ -229,7 +229,7 @@ angular.module('websdoneApp')
         img2: 'img/portfolio/thumb/agatha.gif',
         title2: 'User Interface developer', 
         desc:'Developement of animated prototypes for advertising agency',
-        link: 'http://websdone.co.uk/work/agathachristie/index.html',
+        link: 'http://chillaxing.online/chillaxing/websdone/agathachristie/',
         linkLanding: '#portfolio-agatha',
         carousel: '<p> CSS3 animation</p>',
         class: 'bottom',
@@ -240,19 +240,38 @@ angular.module('websdoneApp')
     ];
 }])
 
-// .controller('updating', ['$scope', function($scope) {
-//     $scope.pageClass = 'updating';
+.controller('youtube', ['$scope', function($scope) {
+    $scope.pageClass = 'youtube';
 
-//     $scope.workDetails = [{ 
-//         title: 'Updating', 
-//         img: 'img/portfolio/arabasco.gif',
-//         img2: 'img/portfolio/thumb/soon.png',
-//         title2: 'Updating', 
-//         desc:'Short contract developing all HTML pages and styles',
-//         link: '#',
-//         linkLanding: '#portfolio-updating',
-//         carousel: '<p> updating</p> ',
-//         class: 'bottom'
-//       }  
-//     ];
-// }])
+    $scope.workDetails = [{ 
+        title: 'YouTube music player', 
+        img: 'img/portfolio/youtube.png',
+        img2: 'img/portfolio/thumb/youtube.png',
+        title2: 'ReactJS Developer', 
+        desc:'<p>Developed with ReactJS and Google API </p><p> YouTube Data API v3 to search and play YouTube videos</p> ',
+        link: 'http://chillaxing.online/chillaxing/websdone/music-player/',
+        linkLanding: '#portfolio-youtube',
+        carousel: '<p>ReactJS - Google API  <br /> </p>',
+        class: 'top',
+        category: 'category-5',
+        order: '1',
+        control: 'youtube'
+      }  
+    ];
+}])
+.controller('updating', ['$scope', function($scope) {
+    $scope.pageClass = 'updating';
+
+    $scope.workDetails = [{ 
+        title: 'Updating', 
+        img: 'img/portfolio/arabasco.gif',
+        img2: 'img/portfolio/thumb/soon.png',
+        title2: 'Updating', 
+        desc:'Coming soon...',
+        // link: '#',
+        // linkLanding: '#portfolio-updating',
+        carousel: '<p> Coming soon...</p> ',
+        class: 'bottom'
+      }  
+    ];
+}])

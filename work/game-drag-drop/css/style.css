@@ -1,0 +1,263 @@
+@font-face {
+    font-family: font;
+    src: url(../font/Shree714-Bold.ttf);
+}
+
+/* Add some margin to the page and set a default font and colour */
+ html, body, .wideBox, #content, #content2 {
+     height: 1920px;
+
+ }
+body {
+  background-color: #5a5a5a;
+  margin: 0;
+  font-size: 2.5em;
+  font-family: font;
+  /*overflow: hidden;*/
+}
+ 
+/* Give headings their own font */
+
+h1 {
+  background: url('../img/logo.png') no-repeat 0 0 ;
+  width: 820px;
+  height: 200px;
+  text-indent: -9999px;
+  padding: 0;
+  margin: 0 auto 0;
+}
+ 
+/* Main content area 
+ 
+
+/* The initial pile of unsorted cards */
+.wideBox, .wideBox2, .startPage {
+  background: url('../img/bg.png') no-repeat 0 0 ;
+  width: 1080px;
+  height: 1920px;
+  margin: 0;
+}
+#card1 {
+  z-index: 1 !important;
+}
+ #content, #content2 {
+    width: 79%;
+    margin: 12px auto;
+    height: 1150px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+ display: block;
+}
+#content #content2 {
+    width: 850px;
+    height: 1100px;
+    margin: 50px auto;
+}
+#cardPile, #cardPile2 {
+  margin: 0 auto;
+  float: left;
+}
+#cardSlots, #cardSlots2 {
+  float: right;
+}
+#cardSlots, #cardPile, #cardSlots2, #cardPile2 {
+  height: 100%;
+  text-align: center;
+}
+.timers {
+  background: url('../img/blocks.png') no-repeat 0 0 ;
+  width: 402px;
+  height: 125px;
+  margin: 0 auto 0px;
+} 
+/* Individual cards and slots */
+#cardSlots div:first-child, #cardPile div:first-child,
+#cardSlots2 div:first-child, #cardPile2 div:first-child  {
+  margin-left: 0;
+}
+ 
+.time {
+    margin-right: 152px;
+    margin-top: 28px;
+    float: right;
+}
+
+.scored  {
+  float: left;
+  margin-left: 170px;
+  margin-top: 28px;
+}
+#cardPile div, #cardPile2 div {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+.questions {
+    background: url('../img/quiz.png') no-repeat 0 0 ;
+    clear: both;
+    width: 978px;
+    height: 150px;
+    text-align: center;
+    padding: 60px 0 60px;
+    margin: 0 auto 40px;
+}
+.questions p {
+    width: 92%;
+    margin: 27px auto;
+    font-size: 1.4em;
+    line-height: 1.2;
+}
+
+#cardPile div, #cardSlots div ,
+#cardPile2 div, #cardSlots2 div {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+  
+#cardPile div.ui-draggable-dragging,
+#cardPile2 div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+ 
+/* Individually coloured cards */
+
+#successMessage, #successMessage2 {
+    background: rgba(90, 90, 90, 0.97) url('../img/RIGHT.png') no-repeat 0 0 ;
+}
+.incorrectMessage, #incorrectMessage, .incorrectMessage2 {
+    background:  rgba(90, 90, 90, 0.97) url('../img/WRONG.png') no-repeat 0 0 ;
+}
+.incorrectMessage2 {
+    background:  rgba(90, 90, 90, 0.97) url('../img/next-time.png') no-repeat 0 0 ;
+}
+#successMessage, .incorrectMessage, #scoreMessage,
+#successMessage2, .incorrectMessage, #scoreMessage2, .incorrectMessage2   {
+    position: absolute;
+    width: 1080px;
+    margin: 0;
+    height: 1920px;
+    z-index: 100;
+    top: 0;
+    text-align: center;
+    color: #fff;
+}
+.incorrectMessage2 {
+    z-index: 15;
+}
+
+#successMessage {
+   z-index: 15;
+}
+.submit, .submit2  {
+    width: 100%;
+    height: 132px;
+    border: none;
+    font-weight: bold;
+    background: url('../img/SUBMIT.png') no-repeat 0 0 ;
+    outline: none;
+    display: block;
+}
+
+.play {
+    padding: 10px 2px 0;
+    text-align: center;
+    margin-top: 68px;
+    background-color: #e1e692;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 69px;
+    display: inline-block;
+    text-decoration: none;
+    color: #5a5a5a;
+    padding-top: 16px;
+}
+
+.play.index {
+    display: block;
+    padding-top: 19px;
+    margin: 25px auto;
+    height: 68px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.startPage .play {
+    background: url('../img/start.png') no-repeat 0 0 ;
+    width: 278px;
+    height: 121px;
+    padding: 0;
+    outline: none;
+}
+
+.startPage .play:active {
+    background-color: transparent;
+    width: 278px;
+    height: 100px;
+    outline: none;
+}
+
+.startPage .play.index {
+    display: block;
+    padding-top: 19px;
+    margin: 25px auto;
+    height: 82px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+     text-indent: -99999px;
+}
+
+.mediaIQ {
+    background: url('../img/logo-media-iq.png') no-repeat 0 0 ;
+    width: 357px;
+    height: 183px;
+}
+.maze {
+    background: url('../img/logo.png') no-repeat 0 0 ;
+    width: 968px;
+    height: 178px;
+    display: block;
+    margin: 10px auto 0;
+    text-indent: -99999px;
+}
+.instructions {
+    background: url('../img/instructions.png') no-repeat 0 0 ;
+    width: 861px;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+    text-indent: -99999px;
+}
+.startPage {
+      padding-top: 50px;
+}
+footer {
+  clear: both;
+}
+
+/* SCREENSAVER */
+#rotating-item-wrapper {
+  position: relative;
+  width: 980px;
+  height: 347px;
+}
+.rotating-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,104 @@
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="noie"> <!--<![endif]-->
+<head>
+	<title> Living Group </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link type="text/css" rel="stylesheet" href="css/jquery.ui.css"></link>
+	<link type="text/css" rel="stylesheet" href="css/default.css"></link>
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	
+</head>
+<body>
+
+	<div class="splash" id="status_page">
+		<div class="logo-main"> </div>
+		<div class="center">
+		<div class="bookshelf">
+			<div class="shelf">
+				<div class="grid-left">
+					<div class="full-row top">
+						<div class="first"> <div class="sample thumb1" sample="flipbook7"></div> </div>
+						<div> <div class="sample thumb2" sample="flipbook8"></div> </div>
+					</div>
+					<div class="full-row">
+						<div class="second"> <div class="sample thumb3" sample="flipbook1"></div> </div>
+						<div class="centered"> <div class="sample thumb4" sample="flipbook2"></div> </div>
+						<div class="third"> <div class="sample thumb5" sample="flipbook3"></div> </div>
+					</div>
+
+			</div>
+			<div class="grid-middle"> 
+				<a class="video" href="https://europe.spdrs.com/holidaygame" data-effect="mfp-zoom-out">
+					<div class="logo"></div> 
+				</a>
+			 </div>
+
+			<div class="grid-right">
+				<div class="full-row top">
+					<div class="first"> <div class="sample thumb6" sample="flipbook9"></div> </div>
+					<div> <div class="sample thumb7" sample="flipbook10"></div> </div>
+				</div>
+				<div class="full-row top">
+					<div class="second"> <div class="sample thumb8" sample="flipbook4"></div> </div>
+					<div class="centered"> <div class="sample thumb9" sample="flipbook5"></div> </div>
+					<div class="third"> <div class="sample thumb10" sample="flipbook6"></div> </div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- Samples-->
+		<div class="samples">
+			<div class="bar">
+				<a class="icon quit"></a>
+			</div>
+			<div id="book-wrapper">
+				<div id="book-zoom"></div>
+			</div>
+		</div>
+
+		<!-- End samples -->
+
+		</div>
+		<footer class="footer"> &nbsp </footer>
+		<div class="gradient"></div>
+	</div>
+
+		<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+		<script src="js/jquery.min.js"></script>
+
+		<!-- Magnific Popup core JS file -->
+		
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/all.js"></script>
+		<script type="text/javascript" src="js/hash.js"></script>
+		<script type="text/javascript" src="js/turn.min.js"></script>
+		<script type="text/javascript" src="js/zoom.min.js"></script>
+		<script type="text/javascript" src="js/bookshelf.js"></script>
+
+		<script type="text/javascript">
+		
+			yepnope({
+				test : Modernizr.csstransforms,
+				nope : ['js/turn.html4.min.js', 'css/jquery.ui.html4.css']
+			});
+
+			$('#sample-viewer a').click(function() {
+				$(this).hide();
+				yepnope({
+					test : Modernizr.csstransforms,
+					load: ['samples/basic/js/basic.js', 'samples/basic/css/basic.css'],
+					nope: 'samples/basic/css/basic.html4.css?'+Math.round(Math.random()*100)
+				});
+			});
+		</script>
+</body>
+</html>

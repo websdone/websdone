@@ -1,0 +1,6 @@
+AuthUserFile /work/touchscreenrentals/results.txt/.htpassword
+AuthName "name of login prompt"
+AuthType basic
+<files pagename>
+require valid-user
+</files>

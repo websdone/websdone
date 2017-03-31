@@ -31,6 +31,9 @@ nav > li > a:hover {
   text-decoration: underline;
   background-color: none; }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
 nav {
   width: auto;
   float: right;
@@ -4960,9 +4963,7 @@ button.navbar-toggle {
     .contact .details {
       text-align: center;
       width: 67%;
-      background-color: #290e39;
-      padding: 20px;
-      margin: 16% auto; }
+      padding: 20px; }
 
   .block {
     font-size: 1em; }
@@ -5038,6 +5039,27 @@ button.navbar-toggle {
 @media only screen and (min-width: 0px) and (max-width: 760px) {
   .ng-carousel slide {
     height: 500px !important;
-    width: 97% !important; } }
+    width: 97% !important; }
+
+  .chunky {
+    margin-top: 2%; }
+    .chunky .chunky a:active, .chunky .btn, .chunky .chunky a, .chunky #chunky-buttons a {
+      padding: 4px 6px 6px !important;
+      font-size: 14px; }
+
+  .contact h2 {
+    font-size: 1.4em; }
+
+  .contact .details {
+    width: 100%; }
+
+  .portfolio-about {
+    margin-top: 2% !important; }
+    .portfolio-about img {
+      max-width: 90%;
+      margin: 0 auto 16px 5%; }
+    .portfolio-about article.col-md-6 {
+      width: 89%;
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=sass-compiled.css.map */

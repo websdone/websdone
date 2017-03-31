@@ -1,0 +1,945 @@
+@media (min-width: 768px) and (min-device-width: 768px) {
+  /* line 2, desk.scss */
+  .hidden-md {
+    display: none;
+  }
+
+  /* line 6, desk.scss */
+  h1.box img.hidden-mob {
+    display: none;
+  }
+
+  /* line 9, desk.scss */
+  h1.box img.hidden-desk {
+    max-width: 60%;
+  }
+
+  /* line 12, desk.scss */
+  .navbar {
+    height: 57px;
+  }
+
+  /* line 15, desk.scss */
+  .row.form .row span.align.hidden-mob {
+    display: none;
+  }
+
+  /* line 19, desk.scss */
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
+  }
+
+  /* line 23, desk.scss */
+  h2.container.secondary {
+    font-size: 2.0em;
+    padding: 45px 7% 4px 18.5%;
+    margin: 0 0 10px;
+  }
+
+  /* line 28, desk.scss */
+  .landing, .video, .switching {
+    width: 54%;
+  }
+  /* line 30, desk.scss */
+  .landing div, .landing img, .video div, .video img, .switching div, .switching img {
+    width: 100%;
+  }
+
+  /* line 34, desk.scss */
+  .landing h2 {
+    margin: 11% auto 3% auto;
+    font-size: 36px;
+  }
+
+  /* line 38, desk.scss */
+  .next.show, form input[type="submit"], .next {
+    width: 14%;
+    color: #fff;
+    margin: 0 auto 5%;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  /* line 46, desk.scss */
+  .landing div {
+    width: 33.33333%;
+  }
+  /* line 49, desk.scss */
+  .landing .col-md-7 {
+    width: 65%;
+    margin: 0;
+    padding-top: 31px;
+    padding: 35px 0 0 22px;
+    float: right;
+  }
+  /* line 56, desk.scss */
+  .landing .col-md-4 {
+    float: left;
+    margin-top: 33px;
+  }
+
+  /* line 66, desk.scss */
+  .contact {
+    background-color: #9279cc;
+    padding: 7px 26px;
+    float: right;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  /* line 75, desk.scss */
+  .container.grey {
+    width: 63%;
+    margin: 0 auto 29px;
+    display: block;
+  }
+
+  /* line 82, desk.scss */
+  .switching .hidden-xs .col-md-4 {
+    width: 20%;
+    margin-top: 38px;
+  }
+  /* line 86, desk.scss */
+  .switching .hidden-xs .col-md-7 {
+    width: 66%;
+    float: left;
+    height: 182px;
+    padding: 61px 21px 0 0;
+    text-align: left;
+    margin: 0 42px 0 0px;
+  }
+  /* line 95, desk.scss */
+  .switching .hidden-xs div {
+    width: 100%;
+  }
+  /* line 98, desk.scss */
+  .switching .hidden-xs h2 {
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* line 106, desk.scss */
+  .video .col-md-4 {
+    display: inline-block;
+    width: 32%;
+    margin-top: 63px;
+  }
+  /* line 111, desk.scss */
+  .video .col-md-7 {
+    width: 64%;
+    display: inline-block;
+    padding-left: 20px;
+    height: 200px;
+    margin: 49px 0 0 4%;
+  }
+
+  /* line 120, desk.scss */
+  header.banner {
+    background: url("../../images/sme/landingPage.jpg") no-repeat top left;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    height: 811px;
+  }
+  /* line 130, desk.scss */
+  header.banner .button {
+    width: 176px;
+    margin: 45px 0 0 8%;
+  }
+  /* line 134, desk.scss */
+  header.banner h1 {
+    width: 100%;
+    font-size: 57px;
+    color: white;
+    line-height: 1.22;
+    margin-left: 12%;
+    margin: 7% 0 0 8%;
+  }
+  /* line 142, desk.scss */
+  header.banner h2 {
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.3;
+    margin-left: 12%;
+    margin: 29px 0 0 8%;
+  }
+  /* line 149, desk.scss */
+  header.banner p {
+    display: block;
+  }
+  /* line 152, desk.scss */
+  header.banner br {
+    display: none;
+  }
+
+  /* line 156, desk.scss */
+  figure.header {
+    width: 81%;
+    margin: 0 auto;
+  }
+
+  /* line 160, desk.scss */
+  h1.box {
+    padding: 83px 16px 37px 50px;
+    font-size: 32px;
+  }
+
+  /* line 166, desk.scss */
+  .landing .col-md-4, .video .col-md-4, .switching .col-md-4 {
+    float: left;
+  }
+
+  /* line 174, desk.scss */
+  .social .text {
+    color: #fff;
+    text-align: right;
+    clear: both;
+    width: auto;
+    padding-right: 75px;
+  }
+
+  /* line 181, desk.scss */
+  article.container.confirmation p {
+    font-size: 24px;
+  }
+
+  /* line 184, desk.scss */
+  .row.form .row p.align, .row.form .row span.align {
+    text-align: left;
+    font-size: 0.8em;
+    color: #333333;
+  }
+
+  /* line 189, desk.scss */
+  article.container {
+    background-color: white;
+    width: 63%;
+  }
+
+  /* line 196, desk.scss */
+  .row.form.plans .row.justify {
+    width: auto;
+    margin: 0 auto;
+  }
+  /* line 200, desk.scss */
+  .row.form.plans .col-md-12.col-sm-8.bold.align {
+    width: 59%;
+    padding-left: 27px;
+    font-size: 1.52em;
+  }
+  /* line 205, desk.scss */
+  .row.form.plans .plan .col-sm-4.col-md-4 {
+    margin-top: 29px;
+  }
+  /* line 208, desk.scss */
+  .row.form.plans .row p.align, .row.form.plans .row.form .row span.align {
+    text-align: left;
+  }
+  /* line 211, desk.scss */
+  .row.form.plans .col-md-12.col-sm-3.align {
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+    font-size: 1.52em;
+  }
+  /* line 217, desk.scss */
+  .row.form.plans article.container, .row.form.plans article.container.data {
+    width: 63%;
+    margin: 20px auto 28px auto;
+  }
+  /* line 221, desk.scss */
+  .row.form.plans .row li {
+    padding-left: 25px;
+  }
+  /* line 224, desk.scss */
+  .row.form.plans h2.plans {
+    display: none;
+  }
+  /* line 227, desk.scss */
+  .row.form.plans article.container {
+    padding: 20px 20px;
+    border: 1px solid #cecece;
+    box-shadow: 0px 1px 3px #ccc;
+  }
+  /* line 232, desk.scss */
+  .row.form.plans li.plan {
+    float: right;
+    padding: 0;
+    width: 44%;
+  }
+  /* line 236, desk.scss */
+  .row.form.plans li.plan .col-sm-4.col-md-4 {
+    width: 93%;
+  }
+
+  /*input[type="submit"].next, form input[type="submit"].next, a.next.next,
+  form.row.form.plans input[type="submit"].next, form.addons input[type="submit"] {
+      width: 21%;
+      color: #fff;
+      margin: 45px auto 52px auto;
+      border-radius: 7px;
+      outline: none;
+      -webkit-box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+      -moz-box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+      box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+      position: relative;
+  }*/
+  /* line 255, desk.scss */
+  #popup {
+    top: 45%;
+    left: 40%;
+    width: 50%;
+    height: 675px;
+  }
+
+  /* line 262, desk.scss */
+  .landings #popup-2 {
+    left: 40%;
+    top: 45%;
+    top: 44%;
+    height: 720px;
+    width: 60%;
+    display: block;
+  }
+
+  /* line 271, desk.scss */
+  .landings #popup-3 {
+    top: 45%;
+    left: 40%;
+    width: 50%;
+    height: 625px;
+  }
+
+  /* line 279, desk.scss */
+  .landings #popup-5 {
+    top: 45%;
+    left: 40%;
+    width: 60%;
+    height: 75% !important;
+  }
+
+  /* line 286, desk.scss */
+  article.container {
+    margin: 0px auto 3%;
+    padding: 0;
+  }
+
+  /* line 290, desk.scss */
+  .data .row.form .row p, .data .row.form .row span {
+    display: inline-block;
+  }
+
+  /* line 294, desk.scss */
+  form.addons {
+    border: none;
+  }
+  /* line 296, desk.scss */
+  form.addons article.container {
+    margin: 0px auto 3%;
+    padding: 0;
+  }
+  /* line 300, desk.scss */
+  form.addons .addons input[type="submit"].want {
+    width: 119px;
+  }
+}
+@media (min-width: 768px) and (min-device-width: 768px) and (min-width: 1200px) {
+  /* line 300, desk.scss */
+  form.addons .addons input[type="submit"].want {
+    width: 97px;
+  }
+}
+@media (min-width: 768px) and (min-device-width: 768px) {
+  /* line 307, desk.scss */
+  form.addons .center.col-md-3.col-sm-3.col-xs-6 {
+    width: 19%;
+    margin: 0 3% 19px 23px;
+    padding: 0;
+  }
+  /* line 311, desk.scss */
+  form.addons .center.col-md-3.col-sm-3.col-xs-6.last {
+    width: 19%;
+    margin: 0 1% 16px 2px;
+  }
+  /* line 316, desk.scss */
+  form.addons span.country {
+    font-size: 11.54px;
+  }
+  /* line 319, desk.scss */
+  form.addons .brake {
+    display: block;
+    clear: both;
+  }
+  /* line 323, desk.scss */
+  form.addons .want {
+    width: 66%;
+    height: 38px;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+  /* line 329, desk.scss */
+  form.addons .col-md-3.col-sm-3, form.addons form.data .col-md-4 {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    padding: 5px 4px 6px 0;
+  }
+  /* line 335, desk.scss */
+  form.addons .col-md-3.col-sm-3.data, form.addons form.data .col-md-4.data {
+    width: 169px;
+    float: right;
+  }
+  /* line 340, desk.scss */
+  form.addons .col-md-8.col-sm-8, form.addons form.data .col-md-8 {
+    padding: 5px 0 5px 0px;
+    margin: 0;
+    float: left;
+    width: 70%;
+    font-weight: bold;
+  }
+  /* line 346, desk.scss */
+  form.addons .col-md-8.col-sm-8.data, form.addons form.data .col-md-8.data {
+    float: left;
+    width: 60%;
+  }
+  /* line 351, desk.scss */
+  form.addons.grey {
+    width: 116%;
+    margin-left: -27px;
+    padding: 25px 57px 7px 7px;
+  }
+  /* line 356, desk.scss */
+  form.addons .flags {
+    width: 100%;
+    margin-left: 4%;
+  }
+  /* line 360, desk.scss */
+  form.addons .flags .col-md-12 p {
+    width: 92%;
+  }
+  /* line 366, desk.scss */
+  form.addons .want {
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+  }
+  /* line 373, desk.scss */
+  form.addons .heading {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) and (min-device-width: 768px) and (max-width: 1200px) {
+  /* line 373, desk.scss */
+  form.addons .heading {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (min-device-width: 768px) {
+  /* line 382, desk.scss */
+  form.addons .order {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) and (min-device-width: 768px) and (max-width: 1200px) {
+  /* line 382, desk.scss */
+  form.addons .order {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (min-device-width: 768px) {
+  /* line 391, desk.scss */
+  form.addons .selectionrow {
+    float: right;
+  }
+  /* line 396, desk.scss */
+  form.addons .plan, form.addons .price {
+    font-size: 23px;
+  }
+  /* line 398, desk.scss */
+  form.addons .plan span.row, form.addons .price span.row {
+    width: 100%;
+    display: block;
+    display: inline-block;
+  }
+  /* line 403, desk.scss */
+  form.addons .plan b, form.addons .price b {
+    display: block;
+  }
+  /* line 408, desk.scss */
+  form.addons .plan span {
+    font-size: 18px;
+    width: 100%;
+    float: left;
+  }
+
+  /* line 415, desk.scss */
+  .btn-more-info {
+    font-size: 16px;
+  }
+
+  /* line 418, desk.scss */
+  form select {
+    height: 38px;
+    background-color: #E5E5E5;
+    text-align: center;
+    width: 62px;
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  /* line 428, desk.scss */
+  .container.details form {
+    width: 63%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  /* line 432, desk.scss */
+  .container.details form input {
+    display: block;
+  }
+  /* line 436, desk.scss */
+  .container.details .desk-half {
+    width: 50%;
+    float: left;
+  }
+  /* line 439, desk.scss */
+  .container.details .desk-half input {
+    width: 93%;
+  }
+  /* line 443, desk.scss */
+  .container.details .email {
+    width: 97%;
+  }
+
+  /* line 447, desk.scss */
+  article.container.data {
+    margin: 4% auto 4%;
+  }
+
+  /* line 454, desk.scss */
+  .row.form input[type="submit"].want {
+    width: 76%;
+    float: left;
+    -webkit-box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+    -moz-box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+    box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+  }
+
+  /* line 462, desk.scss */
+  article.container.confirmation {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+  /* line 466, desk.scss */
+  article.container.confirmation b {
+    color: #313131;
+  }
+
+  /* line 470, desk.scss */
+  article.container.confirmation, article.container.details {
+    margin-bottom: 0;
+  }
+  /* line 472, desk.scss */
+  article.container.confirmation header, article.container.details header {
+    background-color: #f4f4f4;
+    padding: 24px;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 15px;
+  }
+  /* line 477, desk.scss */
+  article.container.confirmation header h2, article.container.details header h2 {
+    width: 66%;
+    margin: 0 auto;
+    font-size: 2.2em;
+  }
+  /* line 483, desk.scss */
+  article.container.confirmation form fieldset, article.container.details form fieldset {
+    margin: 0px 0 20px 0;
+  }
+  /* line 485, desk.scss */
+  article.container.confirmation form fieldset li, article.container.details form fieldset li {
+    border-bottom: none;
+    margin: 0;
+    padding: 14px 0 10px;
+  }
+  /* line 489, desk.scss */
+  article.container.confirmation form fieldset li label, article.container.details form fieldset li label {
+    color: #000;
+  }
+  /* line 493, desk.scss */
+  article.container.confirmation form fieldset ol input, article.container.confirmation form fieldset article.container ol input, article.container.details form fieldset ol input, article.container.details form fieldset article.container ol input {
+    border: 1px solid #ccc;
+    width: 55%;
+    border-radius: 6px;
+    padding: 13px;
+  }
+
+  /* line 502, desk.scss */
+  .wrap {
+    width: 60%;
+    margin: 0px auto;
+    display: block;
+  }
+
+  /* line 507, desk.scss */
+  a.end {
+    width: 44%;
+    min-width: 430px;
+    margin: 0px auto 70px;
+    font-size: 24px;
+    box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+    -moz-box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+    box-shadow: 2px 2px 0px 1px rgba(34, 33, 32, 0.2);
+  }
+
+  /* line 518, desk.scss */
+  .footer-confirmation footer.bs-docs-footer {
+    position: relative;
+    padding-bottom: 38px;
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+
+  /* line 524, desk.scss */
+  article.container.confirmation {
+    border: none;
+    box-shadow: none;
+    background-color: #F4F4F4;
+    width: 80%;
+    margin-left: 15%;
+  }
+
+  /* line 532, desk.scss */
+  footer, .footer-banner {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 535, desk.scss */
+  footer.col-md-3, .footer-banner.col-md-3 {
+    padding: 0;
+  }
+  /* line 538, desk.scss */
+  footer .container, .footer-banner .container {
+    margin: 0 auto;
+    margin: 0 auto;
+    padding: 0 0 0 13px;
+  }
+  /* line 543, desk.scss */
+  footer .social, .footer-banner .social {
+    clear: none;
+  }
+  /* line 545, desk.scss */
+  footer .social .text, .footer-banner .social .text {
+    padding: 0;
+  }
+
+  /* line 551, desk.scss */
+  .data header {
+    padding: 16px 0 0px 12px;
+  }
+  /* line 555, desk.scss */
+  .data form.data .summary .col-md-8.col-sm-8 {
+    width: 44%;
+    font-size: 23.87px;
+    color: #333333;
+  }
+  /* line 560, desk.scss */
+  .data form.data .summary .col-md-4.col-sm-4 {
+    font-size: 27.85px;
+    color: #a9a7a7;
+  }
+  /* line 563, desk.scss */
+  .data form.data .summary .col-md-4.col-sm-4 select {
+    color: #000;
+  }
+  /* line 568, desk.scss */
+  .data .col-md-4.col-sm-4.last {
+    font-size: 27.85px;
+  }
+  /* line 571, desk.scss */
+  .data form.data .col-md-8 {
+    width: 67%;
+    padding: 13px 0 13px 23px;
+    font-size: 31.83px;
+  }
+  /* line 576, desk.scss */
+  .data form.data .col-md-4, .data form form.data .col-md-4 {
+    width: 27%;
+    margin-left: 8px;
+    padding: 10px 0 0 0;
+  }
+  /* line 581, desk.scss */
+  .data .col-md-3.col-sm-3 {
+    padding: 9px 9px 0px 0px;
+  }
+  /* line 584, desk.scss */
+  .data form div.col-md-3.col-sm-3, .data form.data .col-md-4 {
+    display: inline-block;
+    font-weight: bold;
+  }
+  /* line 589, desk.scss */
+  .data .row.form .center {
+    margin: 3% 1% 3% 2%;
+    width: 30%;
+  }
+  /* line 593, desk.scss */
+  .data .row.form .row p.justify, .data .row.form .row span.justify {
+    width: 441px;
+    margin: 0 auto;
+    display: block;
+  }
+  /* line 598, desk.scss */
+  .data span.col-md-1.col-sm-1 {
+    margin: 8px 0 0 0;
+  }
+  /* line 601, desk.scss */
+  .data form select {
+    height: 44px;
+    font-size: 14px;
+  }
+
+  /* line 606, desk.scss */
+  .col-md-7.col-sm-7.hidden-md, header.banner .hidden-md {
+    display: none;
+  }
+
+  /* line 609, desk.scss */
+  .landing h3, .video h3, .switching h3, .landing .hidden-xs h3 {
+    font-size: 19px;
+    margin: 11px 0 9px 0px;
+  }
+
+  /* line 614, desk.scss */
+  article.footer-banner .col-md-9 {
+    width: 82%;
+  }
+  /* line 617, desk.scss */
+  article.footer-banner h3 {
+    color: #fff;
+    font-size: 32px;
+    margin: 0px 0 0 49px;
+    font-size: 28px;
+    margin: 26px 0 0 0px;
+  }
+
+  /* line 625, desk.scss */
+  article.footer-banner a {
+    background: white url("../../images/sme/button-arrow-blue.gif") no-repeat;
+    background-position: 94% 49%;
+    width: 194px;
+    height: 46px;
+    font-size: 0.8em;
+    text-align: left;
+    padding-top: 11px;
+    margin: 19px 3.5% 0 0;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+
+  /* line 637, desk.scss */
+  .row.form.plans .col-md-12.col-sm-8.bold.align, .row.form.plans .col-md-12.col-sm-3.align, form input[type=checkbox] + label {
+    font-size: 32px;
+  }
+
+  /* line 640, desk.scss */
+  .row.form .row p.align, .row.form .row span.align {
+    font-size: 24px;
+  }
+
+  /* line 643, desk.scss */
+  .contact {
+    font-size: 15px;
+  }
+
+  /* line 646, desk.scss */
+  form input[type=checkbox] + label {
+    font-weight: bold;
+  }
+  /* line 648, desk.scss */
+  form input[type=checkbox] + label span, form input[type=checkbox] + label div {
+    font-size: 18px;
+  }
+
+  /* line 652, desk.scss */
+  .row.form .row .plan p {
+    font-size: 16px;
+  }
+  /* line 654, desk.scss */
+  .row.form .row .plan p.small {
+    font-size: 14px;
+  }
+
+  /* line 660, desk.scss */
+  .data form.data .col-md-8 p, .data form.data .col-md-8 .col-md-3.col-sm-3, .data form.data .col-md-4.col-sm-4 p, .data form.data .col-md-4.col-sm-4 .col-md-3.col-sm-3 {
+    font-size: 27.85px;
+  }
+
+  /* line 666, desk.scss */
+  .button a {
+    background: url("../../images/sme/button-arrow.png") no-repeat;
+    background-position: 94% 49%;
+    height: 48px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-top: 8px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  /* line 677, desk.scss */
+  .additional {
+    width: 68%;
+    float: right;
+  }
+
+  /* line 682, desk.scss */
+  .data form.data .row.summary select {
+    margin: 0;
+  }
+}
+@media (min-width: 759px) and (max-width: 1200px) {
+  /* line 689, desk.scss */
+  .data form.data .col-md-8 p, .data form.data .col-md-8 .col-md-3.col-sm-3, .data form.data .col-md-4.col-sm-4 p, .data form.data .col-md-4.col-sm-4 .col-md-3.col-sm-3 {
+    font-size: 0.9em;
+  }
+
+  /* line 692, desk.scss */
+  .data .col-md-4.col-sm-4 {
+    font-size: 1.6em;
+  }
+
+  /* line 695, desk.scss */
+  .data form select {
+    margin: 1px 2px 0 35px;
+  }
+
+  /* line 698, desk.scss */
+  form select {
+    width: 40px;
+  }
+
+  /* line 701, desk.scss */
+  .data .row.form .row p.justify, .data .row.form .row span.justify {
+    width: 385px;
+  }
+
+  /* line 704, desk.scss */
+  form input[id^=checkbox-1-] + label, form input[id^=checkbox-2-] + label, form input[id^=checkbox-3-] + label {
+    width: 112px;
+  }
+
+  /* line 707, desk.scss */
+  .data form.data .summary .col-md-8.col-sm-8 {
+    font-size: 1.4em;
+  }
+
+  /* line 710, desk.scss */
+  .data form.data .col-md-8, .data form.data .summary .col-md-4.col-sm-4, .data .col-md-4.col-sm-4.last {
+    font-size: 1.6em;
+  }
+
+  /* line 713, desk.scss */
+  form input[type=checkbox] + label {
+    font-size: 1.1em;
+  }
+
+  /* line 716, desk.scss */
+  .row.form.plans article.container {
+    width: 77%;
+  }
+
+  /* line 719, desk.scss */
+  article.container.data {
+    margin: 4% auto 0;
+  }
+
+  /* line 722, desk.scss */
+  .data form.data .col-md-4, .data form form.data .col-md-4 {
+    width: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  /* line 729, desk.scss */
+  header.banner h1 {
+    font-size: 44px;
+  }
+
+  /* line 732, desk.scss */
+  header.banner h2 {
+    font-size: 25px;
+  }
+}
+/* line 737, desk.scss */
+row.summary .row.summary .col-md-8.col-sm-8 {
+  width: 49%;
+  float: left;
+}
+
+/* line 741, desk.scss */
+.select-plan-price {
+  width: 35%;
+  padding-top: 12px;
+  float: left;
+  padding-left: 27px;
+  font-size: 18px;
+}
+
+/* line 748, desk.scss */
+.row.summary .select-plan .col-md-4.col-sm-4 {
+  width: 10%;
+  padding: 3px 0 0 0;
+  margin: -2px 0;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* line 756, desk.scss */
+.row.form .row span.select-plan-price {
+  width: 44%;
+  padding-top: 12px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: 30%;
+  text-align: right;
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 766, desk.scss */
+  .row.summary .row.summary .col-md-8.col-sm-8 {
+    width: 49%;
+    float: left;
+  }
+
+  /* line 770, desk.scss */
+  .row.form .row span.select-plan-price {
+    width: 35%;
+    padding-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: 30%;
+    text-align: right;
+    padding-right: 6px;
+    font-weight: bold;
+  }
+
+  /* line 780, desk.scss */
+  .row.summary .select-plan .col-md-4.col-sm-4 {
+    width: 14%;
+    padding: 8px 0 0 0;
+    margin: -2px 0;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+  }
+}

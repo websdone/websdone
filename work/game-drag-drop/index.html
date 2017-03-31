@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+
+		  <title>THE A MAZE QUIZ</title>
+		  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+	    <section class="content startPage">
+	    	<!-- START: Rotating Images -->
+		    <a href="index-2.html">
+		      <img src="img/home.png" alt="Quiz game" />
+		    </a>
+	     </section>  
+
+
+	     <script>
+
+	        var elClassList = document.querySelector(".startPage").classList;
+	        var timeoutID;
+
+	        function setup() {
+	            this.addEventListener("keypress", resetTimer, false);
+	            this.addEventListener("DOMMouseScroll", resetTimer, false);
+	            this.addEventListener("touchmove", resetTimer, false);
+
+	            startTimer();
+	        }
+	        setup();
+
+	        function startTimer() {
+	            // timeoutID = window.setTimeout(goInactive, 10000);
+	            timeoutID = window.setTimeout(goInactive, 120000);
+	        }
+
+	        function resetTimer(e) {
+	            window.clearTimeout(timeoutID);
+
+	            goActive();
+	        }
+	        
+	        function goInactive() {
+	             window.location="screensaver.html"; 
+	        }
+
+	        function goActive() {
+	             window.location="index.html"; 
+	            startTimer();
+	        }
+	    </script>
+	  </body>
+</html>
+

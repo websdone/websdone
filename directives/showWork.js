@@ -4,7 +4,7 @@ angular.module('websdoneApp')
 .directive('showWork',
     function() {
         return {
-             restrict: 'AE',
+            restrict: 'AE',
             scope: true,
             templateUrl: 'pages/show-work.html' 
         };
@@ -13,7 +13,7 @@ angular.module('websdoneApp')
 .directive('carouselBlock',
     function() {
         return {
-             restrict: 'AE',
+            restrict: 'AE',
             scope: true,
             templateUrl: 'pages/carousel-block.html' 
         };
@@ -22,8 +22,16 @@ angular.module('websdoneApp')
 .directive('pLanding',
     function() {
         return {
-             restrict: 'AE',
+            restrict: 'AE',
             scope: true,
             templateUrl: 'pages/portfolio-landing.html' 
+        };
+    })
+
+.directive('navLinks',
+    function() {
+        return {
+            scope: true,
+            templateUrl: 'directives/nav.html' 
         };
     });

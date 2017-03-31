@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ 	<meta charset="utf-8">
+ 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css" />	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/popup.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="assets/js/orientationchange.js"></script>
+	
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title> Truphone </title>
+	<body>
+		<!-- Load header -->
+		<div id="header"> </div>
+		<!-- CONTENT -->
+		<section class="container-fluid main">
+			<h1 class="box"> 
+				<span class="container">
+					Almost there - freedom for your business mobile is close!
+                    <div id="trajectory">
+                        <img src="images/sme/trajectory-details.png" alt="" class="hidden-desk" />
+                        <img src="images/sme/trajectory-details-phone.png" alt="" class="hidden-mob" />
+                        <a href="./companydetails.html" id="trajectorycompany">Click</a>
+                        <a href="./contactdetails.html" id="trajectorypersonal">Click</a>
+                    </div>
+				</span>
+			</h1>
+			
+			<article class="container details">		
+				<header>
+					<h2> 2. Company Contact Details </h2>
+				</header>	
+				<form action="confirmation.html" autocomplete="on" class="row form">
+					<fieldset>
+						<ol>
+							<li>  
+								<h2>  </h2>
+								<legend> This is a required field*</legend>
+							</li>
+							<li class="desk-half">
+								<label>First Name*</label>
+								<input placeholder="First Name" name="first-name" type="text" autofocus />
+							</li>
+							<li class="desk-half">
+								<label>Last Name*</label>
+								<input placeholder="Last Name" name="last-name" type="text" />
+							</li>
+							<li>
+								<label>Email*</label>
+								<input placeholder="Email address" name="email-address" type="text" class="email" />
+							</li>
+							<li>
+								<p>We'll give you a call to make sure everything is as you'd like it with your order.</p>
+							</li>
+							<li>
+								<label>Phone number*</label>
+								<input placeholder="Phone number" name="phone-number" type="text" class="email" />
+							</li>
+						</ol>
+					</fieldset>
+                    <input type="submit" value="Continue" class="next show">
+				</form>
+			</article>		
+	</section>
+
+		<!-- Load footer -->
+		<div id="footer"> </div>
+
+		<script> 
+			$(document).ready(function(){
+			  $("#header").load("includes/header.html");
+			  $("#footer").load("includes/footer.html"); 
+			});
+		</script>
+	</body>
+</html>

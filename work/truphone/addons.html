@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ 	<meta charset="utf-8">
+ 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css" />	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/popup.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="assets/js/orientationchange.js"></script>	
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title> Truphone </title>
+	<body>
+		<!-- Load header -->
+		<div id="header"> </div>
+
+        <form action="summary.html" autocomplete="on" class="row form addons">
+            <!-- CONTENT -->
+            <section class="container-fluid main">
+                <header>
+                    <h1 class="box">
+                        <span class="container">
+                            <p>
+                                Want to customise your plan a bit more?
+                            </p>
+                            <p>
+                                Here are some extras that should make life even easier.
+                            </p>
+                        </span>
+                    </h1>
+                    <h2 class="container secondary">
+                        Additional local numbers for other countries?
+                    </h2>
+                </header>
+
+                <article class="container">
+                    <article class="addons flags">
+                        <header>
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7 heading">
+                                    Local Number(s)
+                                    <a data-toggle="modal" href="#popup-6" class="btn-large">
+                                        <img src="images/sme/question.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="col-md-5 col-sm-5 order">
+
+                                    £5 each / month
+
+                                </div>
+                            </div>
+                        </header>
+                        <!-- Flags -->
+                        <div class="col-md-12">
+                            <p>
+                                Let us know if you're interested in additional local numbers for any of these countries by selecting that country's flag below.
+                            </p>
+                            <p class="last">
+                                Your first additional number is free but you can have up to 8 numbers on one SIM card.
+                            </p>
+                            <p class="last">
+                                If you're not sure - don't worry you can confirm your selection later.
+                            </p>
+                            <figure class="flags">
+                                <div class="center col-md-3 col-sm-3 col-xs-6">
+                                    <span data-name="AddUSA" href="#" class="country ">
+                                        <input type="hidden" value="false" name="AddUSA" id="AddUSA" data-val-required="The AddUSA field is required." data-val="true">
+                                        Netherlands
+                                        <img alt="" src="images/sme/flag-nl.png">
+                                    </span>
+                                </div>
+
+                                <div class="center col-md-3 col-sm-3 col-xs-6 last">
+                                    <span data-name="AddUSA" href="#" class="country">
+                                        <input type="hidden" value="False" name="AddSpain" id="AddSpain" data-val-required="The AddUSA field is required." data-val="false">
+                                        USA
+                                        <img alt="" src="images/sme/flag-usa.png">
+                                    </span>
+                                </div>
+
+                                <div class="center col-md-3 col-sm-3 col-xs-6">
+                                    <span data-name="AddUSA" href="#" class="country">
+                                        <input type="hidden" value="False" name="AddSpain" id="AddSpain" data-val-required="The AddUSA field is required." data-val="false">
+                                        Germany
+                                        <img src="images/sme/flag-ge.png" alt="" />
+                                    </span>
+                                </div>
+
+                                <div class="center col-md-3 col-sm-3 col-xs-6 last">
+                                    <span data-name="AddUSA" href="#" class="country">
+                                        <input type="hidden" value="False" name="AddSpain" id="AddSpain" data-val-required="The AddUSA field is required." data-val="false">
+                                        Spain
+                                        <img src="images/sme/flag-sp.png" alt="" />
+                                    </span>
+                                </div>
+                                <span class="brake"> </span>
+                                <div class="center col-md-3 col-sm-3 col-xs-6">
+                                    <span data-name="AddUSA" href="#" class="country blue">
+                                        <input type="hidden" value="False" name="AddSpain" id="AddSpain" data-val-required="The AddUSA field is required." data-val="false">
+                                        Australia
+                                        <img src="images/sme/flag-au.png" alt="" />
+                                    </span>
+                                </div>
+
+                                <div class="center col-md-3 col-sm-3 col-xs-6 last ">
+                                    <span data-name="AddUSA" href="#" class="country">
+                                        <input type="hidden" value="False" name="AddSpain" id="AddSpain" data-val-required="The AddUSA field is required." data-val="false">
+                                        Hong Kong
+                                        <img src="images/sme/flag-hk.png" alt="" />
+                                    </span>
+                                </div>
+
+                                <div class="center col-md-3 col-sm-3 col-xs-6">
+                                    <span data-name="AddUSA" href="#" class="country grey">
+                                        <input type="hidden" value="False" name="AddSpain" id="AddSpain" data-val-required="The AddUSA field is required." data-val="false">
+                                        UK
+                                        <img src="images/sme/flag-uk.png" alt="" />
+                                    </span>
+                                </div>
+
+                                <div class="center col-md-3 col-sm-3 col-xs-6 last">
+                                    <span data-name="AddUSA" href="#" class="country">
+                                        <input type="hidden" value="False" name="AddSpain" id="AddSpain" data-val-required="The AddUSA field is required." data-val="false">
+                                        Poland
+                                        <img src="images/sme/flag-po.png" alt="" />
+                                    </span>
+                                </div>
+                            </figure>
+                        </div>
+                    </article>
+                    <article class="addons grey">
+                        <header>
+                            <h3> Additional Data Only plans? </h3>
+                            <p>
+                                Just a note - the number of data plans you choose must be the same or less than the number of Truphone World Plans you've just chosen.
+                            </p>
+                        </header>
+                    </article>
+
+                    <article class="dataplan">
+                        <!-- 1GB PLAN -->
+                        <div class="row">
+                            <div class="col-md-7 col-sm-7 heading">
+                                1GB Additional data only plan
+                            </div>
+                            <div class="col-md-4 col-sm-4 order">
+
+                                £20/month
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 subheading">
+                                <p>
+                                <p>
+                                    1 bundle.  1 tariff.  66 countries.
+                                    <a data-toggle="modal" href="#popup-5" class="btn-large">
+                                        <img src="images/sme/question.png" alt="" />
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <span class="selectionrow">
+                                    <input type="submit" value="I WANT IT" class="want" id="one-gb" />
+                                    <select name="#" form="amount" id="one-gb-select">
+                                        <option value="volvo">1</option>
+                                        <option value="saab">2</option>
+                                        <option value="opel">3</option>
+                                        <option value="audi">4</option>
+                                        <option value="audi">5</option>
+                                        <option value="audi">6</option>
+                                        <option value="audi">7</option>
+                                        <option value="audi">8</option>
+                                        <option value="audi">9</option>
+                                        <option value="audi">10</option>
+                                        <option value="audi">11</option>
+                                        <option value="audi">12</option>
+                                        <option value="audi">13</option>
+                                        <option value="audi">14</option>
+                                        <option value="audi">15</option>
+                                        <option value="audi">16</option>
+                                        <option value="audi">17</option>
+                                        <option value="audi">18</option>
+                                        <option value="audi">19</option>
+                                        <option value="audi">20</option>
+                                        <option value="audi">21</option>
+                                        <option value="audi">22</option>
+                                        <option value="audi">23</option>
+                                        <option value="audi">24</option>
+                                        <option value="audi">25</option>
+                                        <option value="audi">25+</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                        <ul id="more" class="collapse">
+                            <li>
+                                All Truphone plans are for a 12 month contract, and include a
+                                single international SIM card with one UK number and one
+                                additional number of your choice for any country within the
+                                Truphone Zone ¹.
+                            </li>
+
+                            <li>
+                                Truphone plans provide a bundle of minutes, texts and data
+                                which you can use in and between 66 countries ².
+                            </li>
+
+                            <li>
+                                Calls to other UK Truphone numbers are free when made
+                                from UK.
+                            </li>
+
+                            <li>
+                                <a href="http://www.truphone.com/uk/rates/" target="_blank">
+                                    For more information on our rates
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="http://www.truphone.com/uk/terms/" target="_blank">
+                                    To read the full terms and conditions of your price plan
+                                </a>
+                            </li>
+
+                            <li class="footnote">
+                                ¹ Truphone Zone: United Kingdom, United States, Australia, Hong Kong, Germany,
+                                Spain, Poland and The Netherlands
+                            </li>
+
+                            <li class="footnote">
+                                ² Truphone World:
+                                <ul>
+                                    <li>
+                                        <strong>Europe:</strong>
+                                        Austria, Belgium, Bulgaria, Cyprus, Czech Republic,
+                                        Denmark, Estonia, Finland, France, French Guiana, Germany, Greece, Guadeloupe, Guernsey, Hong Kong, Hungary, Ireland, Isle of Man, Italy, Jersey, Latvia, Lithuania, Luxembourg, Malta, Martinique, Monaco, Netherlands, Poland, Portugal, Reunion Island, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom, Vatican City, Mayotte, Albania, Andorra, Bosnia &amp; Herzegovina, Croatia, Faroe Islands, Gibraltar, Iceland,  Liechtenstein, Macedonia, Montenegro, Norway, San Marino, Belarusand Turkey, Serbia, Switzerland, Ukraine
+                                    </li>
+                                    <li>
+                                        <strong>Asia:</strong> China,  Singapore, Japan
+                                    </li>
+                                    <li>
+                                        <strong>Eurasia:</strong> Russia
+                                    </li>
+                                    <li>
+                                        <strong>South America:</strong> Mexico, Brazil, Argentina
+                                    </li>
+                                    <li>
+                                        <strong>Oceania:</strong> New Zealand, Australia
+                                    </li>
+                                    <li>
+                                        <strong>North America:</strong> United States, Canada
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-more-info small" data-toggle="collapse" data-target="#more">
+                            More info
+                        </button>
+                    </article>
+                    <ul id="fewer" class="collapse">
+                        <article class="dataplan">
+                            <!-- 2GB Plan PLAN -->
+                            <div class="row">
+
+                                <div class="col-md-7 col-sm-7 heading">
+                                    2GB Additional data only plan
+                                </div>
+                                <div class="col-md-4 col-sm-4 order">
+  
+                                        £35/month
+             
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 ">
+                                    <p>
+                                        1 bundle.  1 tariff.  66 countries.
+                                        <a data-toggle="modal" href="#popup-5" class="btn-large">
+                                            <img src="images/sme/question.png" alt="" />
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-md- col-sm-6">
+                                    <span class="selectionrow">
+                                        <input type="submit" value="I WANT IT" class="want" id="one-gb" />
+                                        <select name="#" form="amount" id="one-gb-select">
+                                            <option value="volvo">1</option>
+                                            <option value="saab">2</option>
+                                            <option value="opel">3</option>
+                                            <option value="audi">4</option>
+                                            <option value="audi">5</option>
+                                            <option value="audi">6</option>
+                                            <option value="audi">7</option>
+                                            <option value="audi">8</option>
+                                            <option value="audi">9</option>
+                                            <option value="audi">10</option>
+                                            <option value="audi">11</option>
+                                            <option value="audi">12</option>
+                                            <option value="audi">13</option>
+                                            <option value="audi">14</option>
+                                            <option value="audi">15</option>
+                                            <option value="audi">16</option>
+                                            <option value="audi">17</option>
+                                            <option value="audi">18</option>
+                                            <option value="audi">19</option>
+                                            <option value="audi">20</option>
+                                            <option value="audi">21</option>
+                                            <option value="audi">22</option>
+                                            <option value="audi">23</option>
+                                            <option value="audi">24</option>
+                                            <option value="audi">25</option>
+                                            <option value="audi">25+</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <ul id="more2" class="collapse">
+                                <li>
+                                    All Truphone plans are for a 12 month contract, and include a
+                                    single international SIM card with one UK number and one
+                                    additional number of your choice for any country within the
+                                    Truphone Zone ¹.
+                                </li>
+
+                                <li>
+                                    Truphone plans provide a bundle of minutes, texts and data
+                                    which you can use in and between 66 countries ².
+                                </li>
+
+                                <li>
+                                    Calls to other UK Truphone numbers are free when made
+                                    from UK.
+                                </li>
+
+                                <li>
+                                    <a href="http://www.truphone.com/uk/rates/" target="_blank">
+                                        For more information on our rates
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="http://www.truphone.com/uk/terms/" target="_blank">
+                                        To read the full terms and conditions of your price plan
+                                    </a>
+                                </li>
+
+                                <li class="footnote">
+                                    ¹ Truphone Zone: United Kingdom, United States, Australia, Hong Kong, Germany,
+                                    Spain, Poland and The Netherlands
+                                </li>
+
+                                <li class="footnote">
+                                    ² Truphone World:
+                                    <ul>
+                                        <li>
+                                            <strong>Europe:</strong>
+                                            Austria, Belgium, Bulgaria, Cyprus, Czech Republic,
+                                            Denmark, Estonia, Finland, France, French Guiana, Germany, Greece, Guadeloupe, Guernsey, Hong Kong, Hungary, Ireland, Isle of Man, Italy, Jersey, Latvia, Lithuania, Luxembourg, Malta, Martinique, Monaco, Netherlands, Poland, Portugal, Reunion Island, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom, Vatican City, Mayotte, Albania, Andorra, Bosnia &amp; Herzegovina, Croatia, Faroe Islands, Gibraltar, Iceland,  Liechtenstein, Macedonia, Montenegro, Norway, San Marino, Belarusand Turkey, Serbia, Switzerland, Ukraine
+                                        </li>
+                                        <li>
+                                            <strong>Asia:</strong> China,  Singapore, Japan
+                                        </li>
+                                        <li>
+                                            <strong>Eurasia:</strong> Russia
+                                        </li>
+                                        <li>
+                                            <strong>South America:</strong> Mexico, Brazil, Argentina
+                                        </li>
+                                        <li>
+                                            <strong>Oceania:</strong> New Zealand, Australia
+                                        </li>
+                                        <li>
+                                            <strong>North America:</strong> United States, Canada
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-more-info small" data-toggle="collapse" data-target="#more2">
+                                More info
+                            </button>
+                        </article>
+
+                    </ul>
+                    <button type="button" class="btn btn-more-info fewer small" data-toggle="collapse" data-target="#fewer">
+                        Show me more options
+                    </button>
+                </article>
+                <input type="submit" value="Continue" class="next" />
+        </form>	
+</section>
+	
+		<!-- Load footer -->
+		<div id="footer"> </div>
+
+		<!-- 66 countries -->
+		<div class="modales">
+			<div id="popup-5" class="modal fade in" style="display: none; ">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal">×</a>
+					<h3>Usable in 66 countries </h3>
+				</div>
+				<div class="modal-body">
+					<p>
+						Use your bundle of texts, calls and data in the following 66 countries, just like you do at home.
+					</p>
+					<p>
+						
+						<p class="col-md-4 col-sm-4">	Europe: </p> 
+						<p class="col-md-8 col-sm-8">Austria, Belgium, Bulgaria, Cyprus, Czech Republic, 
+							Denmark, Estonia, Finland, France, French Guiana, Germany, Greece, Guadeloupe, Guernsey, Hong Kong, Hungary, Ireland, Isle of Man, Italy, Jersey, Latvia, Lithuania, Luxembourg, Malta, Martinique, Monaco, Netherlands, Poland, Portugal, Reunion Island, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom, Vatican City, Mayotte, Albania, Andorra, Bosnia &amp; Herzegovina, Croatia, Faroe Islands, Gibraltar, Iceland,  Liechtenstein, Macedonia, Montenegro, Norway, San Marino, Belarusand Turkey, Serbia, Switzerland, Ukraine</p>
+		
+						<p class="col-md-4 col-sm-4">	Asia: </p><p class="col-md-8 col-sm-8">China,  Singapore, Japan</p>
+				
+						<p class="col-md-4 col-sm-4">Eurasia: </p><p class="col-md-8 col-sm-8"> Russia</p>
+						<p class="col-md-4 col-sm-4"> South America:</p> <p class="col-md-8 col-sm-8"> Mexico, Brazil, Argentina</p>
+
+						<p class="col-md-4 col-sm-4"> Oceania: </p><p class="col-md-8 col-sm-8">New Zealand, Australia</p>
+						<p class="col-md-4 col-sm-4">North America: </p><p class="col-md-8 col-sm-8">United States, Canada</p>
+					</div>
+			</div>
+		</div>
+	
+			<!-- local numbers -->
+			<div class="modales">
+				<div id="popup-6" class="modal fade in" style="display: none; ">
+					<div class="modal-header">
+						<a class="close" data-dismiss="modal">×</a>
+						<h3> Additional international phone number  </h3>
+					</div>
+					<div class="modal-body">
+						<p>
+							Additional local numbers allow you to give contacts in that country a local number to reach you on, at local rates. 
+						</p>
+						<p>You can have up to 8 numbers, all on one SIM card and linked by one voicemail. </p>
+						<p>
+							Additional local numbers are available for The Netherlands, Germany, The US, Australia, Hong Kong, Spain and Poland.
+		   				</p>
+					</div>
+				</div>
+			</div>
+			<script> 
+				$(document).ready(function(){
+				  $("#header").load("includes/header.html");
+				  $("#footer").load("includes/footer.html"); 
+				//	$('.modal').toggleClass('hide');
+				});	
+			</script>
+	</body>
+</html>
